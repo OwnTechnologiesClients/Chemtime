@@ -1,6 +1,6 @@
 import React from 'react'
 import './CourseSection.scss'
-import img1 from '../../assets/homepage/course/c1.jpg'
+import img1 from '../../assets/homepage/course/c2.jpg'
 import img2 from '../../assets/homepage/course/c2.jpg'
 import img3 from '../../assets/homepage/course/c3.jpg'
 import img4 from '../../assets/homepage/course/c4.jpg'
