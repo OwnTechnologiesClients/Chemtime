@@ -3,7 +3,7 @@ import "./Course.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
 import Footer from "../../Components/footer/Footer";
-import bg3 from "../../assets/bg12.png";
+import onlineCoursesBannerImg from "../../assets/online-courses-banner.jpg";
 // import HeroSection from '../../components/heroSection/HeroSection'
 // import CourseDetail from '../../components/courseDetail/CourseDetail'
 // import courseDetailImg from '../../assets/courseDetail.png'
@@ -72,7 +72,7 @@ const OnlineCourse = () => {
       <Navbar />
 
       <CourseHeroSection
-        imgSrc={bg3}
+        imgSrc={onlineCoursesBannerImg}
         hd1={"ONLINE COURSES"}
         hd2={"FOR YOUR BETTER FUTURE"}
       />

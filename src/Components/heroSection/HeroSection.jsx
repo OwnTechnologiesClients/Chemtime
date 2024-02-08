@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import imgSrc1 from '../../assets/bg1.jpg'
 import imgSrc2 from '../../assets/bg2.jpg'
-import imgSrc3 from '../../assets/bg8.jpg'
+import imgSrc3 from '../../assets/batches-banner.jpeg'
 import imgSrc6 from '../../assets/mb-hero-1.jpg'
 import imgSrc7 from '../../assets/mb-hero-2.jpg'
 import imgSrc4 from '../../assets/bg9.jpeg'
