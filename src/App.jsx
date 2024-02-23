@@ -31,6 +31,7 @@ import TopCourseIitJam from "./pages/topCourses/TopCourseIitJam";
 import TopCourseCsir from "./pages/topCourses/TopCourseCsir";
 import TopCourseGate from "./pages/topCourses/TopCourseGate";
 import Scholarship from "./pages/scholarship/Scholarship";
+import Price from "./Components/price/Price";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             <Route path="/payment" element={<Phonepe />} />
             <Route path="/success" element={<Success />} />
             <Route path="/failure" element={<Failure />} />
+            <Route path="/price" element={<Price />} />
           </Routes>
         </ScrollToTop>
       </BrowserRouter>
