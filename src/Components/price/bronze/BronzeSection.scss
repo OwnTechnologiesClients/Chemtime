@@ -1,13 +1,14 @@
 .price-container {
   font-family: "Poppins";
+  margin-bottom: 2vw;
 
   .price-template {
     display: flex;
     flex-direction: column;
     box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
     width: 22vw;
-    margin-right: 8vw;
-    margin-bottom: 2vw;
+    // margin-right: 8vw;
+    // margin-bottom: 2vw;
 
     .head-section {
       background-color: #b97761;
@@ -156,8 +157,9 @@
 
 @media screen and (max-width: "480px") {
   .price-container {
+    margin-bottom: 5vw;
     .price-template {
-      width: 50vw;
+      width: 88vw;
 
       .head-section {
         padding: 14px;
@@ -209,12 +211,12 @@
             }
 
             p {
-              font-size: 2.2vw;
+              font-size: 3vw;
             }
           }
 
           p {
-            font-size: 2.2vw;
+            font-size: 3vw;
           }
         }
 
@@ -229,18 +231,18 @@
             }
 
             p {
-              font-size: 2.2vw;
+              font-size: 3vw;
             }
           }
 
           p {
-            font-size: 2.2vw;
+            font-size: 3vw;
           }
         }
 
         .btns {
           .read-more-btn {
-            font-size: 2vw;
+            font-size: 3vw;
           }
         }
       }
