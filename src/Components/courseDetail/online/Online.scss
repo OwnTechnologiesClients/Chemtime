@@ -1,76 +1,75 @@
-.online{
-    padding: 5vw;
+.online {
+  padding: 5vw;
 
-    img{
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
-    h1{
-        font-size: 1.7vw;
-        padding: .5vw 0;
-        font-weight: normal;
-        
-    }
-    h2{
-        font-weight: normal;
-    }
-    p{
-        color: #605e5e;
-        font-size: 1.2vw;
-        padding: 1vw 0;
-    }
-    ul,ol{
-        padding: 1.5vw;
-        li{
-        color: #605e5e;
-            padding: .5vw 0;
-            font-size: 1.1vw;
-            line-height: 1.4vw;
-            h6{
-                color: #000;
-                display: inline-block;
-                font-size: 1.3vw;
-                font-weight: normal;
-            }
-
-        }
-    }
-    h5{
-        font-weight: normal;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  h1 {
+    font-size: 1.7vw;
+    padding: 0.5vw 0;
+    font-weight: normal;
+  }
+  h2 {
+    font-weight: normal;
+  }
+  p {
+    color: #605e5e;
+    font-size: 1.2vw;
+    padding: 1vw 0;
+  }
+  ul,
+  ol {
+    padding: 1.5vw;
+    li {
+      color: #605e5e;
+      padding: 0.5vw 0;
+      font-size: 1.1vw;
+      line-height: 1.4vw;
+      h6 {
+        color: #000;
         display: inline-block;
-        font-size: 1.1vw;
-        color: #2D8EFF !important;
+        font-size: 1.3vw;
+        font-weight: normal;
+      }
+    }
+  }
+  h5 {
+    font-weight: normal;
+    display: inline-block;
+    font-size: 1.1vw;
+    color: #2d8eff !important;
+  }
+
+  .pricing-row {
+    display: flex;
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.1rem;
     }
 
-    .pricing-row{
-        display: flex;
+    p {
+      font-size: 1rem;
+    }
+    ul,
+    ol {
+      li {
+        font-size: 1rem;
+        line-height: 1.2rem;
+        h6 {
+          font-size: 1rem;
+        }
+      }
+    }
+    h5 {
+      font-size: 1.1rem;
     }
 
-    @media screen and (max-width:480px) {
-        
-            h1{
-                font-size: 1.1rem;
-                
-            }
-           
-            p{
-                font-size: 1rem;
-            }
-            ul,ol{
-                li{
-                    font-size: 1rem;
-                    line-height: 1.2rem;
-                    h6{
-                        font-size: 1rem;
-                    }
-        
-                }
-            }
-            h5{
-                font-size: 1.1rem;
-            }
-        
-        
+    .pricing-row {
+      flex-direction: column;
     }
+  }
 }
