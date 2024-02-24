@@ -1,6 +1,8 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
+import PlatinumSection from '../../price/platinum/PlatinumSection';
+
 import { Helmet } from "react-helmet";
 
 
@@ -62,7 +64,9 @@ const JamOffline = () => {
 
 
 
-            <CourseTable mode={"Offline Dashboard"} tableFields={tableFields} />
+            <div className='pricing-row'>
+                <PlatinumSection />
+            </div>
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>

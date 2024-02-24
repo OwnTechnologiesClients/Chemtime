@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
 import Footer from "../footer/Footer";
-import Section from "./Section"
+import BronzeSection from "./bronze/BronzeSection";
+
 
 const Price = () => {
   return (
     <div>
       <Navbar />
-      <Section />
+      <BronzeSection />
       <Footer />
     </div>
   );

@@ -1,6 +1,10 @@
 import React from 'react'
 import courseImage from '../../../assets/gate-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
+import BronzeSection from '../../price/bronze/BronzeSection';
+import SilverSection from '../../price/silver/SilverSection';
+import GoldSection from '../../price/gold/GoldSection';
+import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
 
 const GateOnline = () => {
@@ -74,10 +78,19 @@ const GateOnline = () => {
         <li> • <h6>Higher Education:</h6> A valid GATE score is also allow for admission to master's and doctoral programs in renowned institutes in India. It paves the way for a successful academic career.</li>
       </ul>
 
-     
 
-      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+
+      <div className='pricing-row'>
+        <BronzeSection />
+        <SilverSection />
+
+      </div>
+      <div className='pricing-row'>
+        <GoldSection />
+        <PlatinumSection />
+
+      </div>
+      
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>

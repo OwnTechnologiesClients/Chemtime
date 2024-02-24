@@ -3,6 +3,11 @@ import './Online.scss'
 import courseImage from '../../../assets/csir-net-online.jpg'
 import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
+import Section from '../../price/bronze/BronzeSection';
+import BronzeSection from '../../price/bronze/BronzeSection';
+import SilverSection from '../../price/silver/SilverSection';
+import GoldSection from '../../price/gold/GoldSection';
+import PlatinumSection from '../../price/platinum/PlatinumSection';
 
 
 const CsirOnline = () => {
@@ -82,9 +87,20 @@ const CsirOnline = () => {
       </ol>
 
 
+      <div className='pricing-row'>
+        <BronzeSection />
+        <SilverSection />
 
-      <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+      </div>
+      <div className='pricing-row'>
+        <GoldSection />
+        <PlatinumSection />
+
+      </div>
+
+
+      {/* <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
+      <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} /> */}
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>

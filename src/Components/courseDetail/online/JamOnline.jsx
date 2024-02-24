@@ -1,6 +1,10 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
+import BronzeSection from '../../price/bronze/BronzeSection';
+import SilverSection from '../../price/silver/SilverSection';
+import GoldSection from '../../price/gold/GoldSection';
+import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
 
 const JamOnline = () => {
@@ -80,8 +84,15 @@ const JamOnline = () => {
       </ul>
 
 
-      <OnlineCourseTable mode={"Online Dashboard"} tableFields={tableFields} />
-      <OnlineCourseTable mode={"Recorded Dashboard"} tableFields={recorded} />
+      <div className='pricing-row'>
+        <BronzeSection />
+        <SilverSection />
+
+      </div>
+      <div className='pricing-row'>
+        <GoldSection />
+        <PlatinumSection />
+      </div>
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>
