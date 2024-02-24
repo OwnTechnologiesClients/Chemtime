@@ -1,0 +1,13 @@
+.all-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5vw 5vw;
+
+ 
+}
+
+@media screen and (max-width: "480px") {
+  .all-section {
+    flex-direction: column;
+  }
+}
