@@ -6,9 +6,9 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
-    width: 22vw;
-    // margin-right: 8vw;
-    // margin-bottom: 2vw;
+    width: 28vw;
+    // margin-right: 2vw;
+    margin-bottom: 2vw;
 
     .silver-head-section {
       background-color: #A1A6AA;
@@ -75,8 +75,7 @@
 
       .pricing {
         display: flex;
-        justify-content: center;
-        gap: 10vw;
+        justify-content: space-between;
         padding: 7px 0px;
 
         .pri {
@@ -182,16 +181,16 @@
         padding: 10px 10px;
 
         .value {
-          gap: 7vw;
+          gap: 23vw;
           padding: 8px 0px;
 
           .right-value {
-            font-size: 4vw;
+            font-size: 6vw;
           }
           .left-value {
-            font-size: 4vw;
+            font-size: 6vw;
             &::before {
-              width: 84px;
+              width: 110px;
             }
           }
         }
