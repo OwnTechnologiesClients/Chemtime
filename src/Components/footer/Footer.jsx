@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
           <div className="link">
             <img src={checkbox} alt="" />
-            <Link to="/blog">Blog</Link>
+            <Link to="https://blog.chemtime.co.in" target="_blank">Blog</Link>
           </div>
           <div className="link">
             <img src={checkbox} alt="" />

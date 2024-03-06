@@ -39,7 +39,7 @@ const JamOffline = () => {
                 <meta name="description" content="Fuel your success with ASAP Institute's IIT JAM Chemistry program. Expert instructors, comprehensive syllabus coverage, and flexible batches. Enroll now!" />
                 <meta name="keywords" content="IIT JAM Chemistry coaching Delhi, Offline coaching for IIT JAM Chemistry in Delhi, Best coaching institute for IIT JAM Chemistry, Top IIT JAM Chemistry coaching centers in Delhi, Classroom coaching for IIT JAM Chemistry, IIT JAM Chemistry coaching classes Delhi" />
             </Helmet>
-            <img src={courseImage} alt="" /><br></br><br></br><br></br>
+            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
             <h1>IIT JAM Chemistry: Fueling Your Path to Success</h1>
             <p>Welcome to the IIT JAM Chemistry program at ASAP Institute (formerly CHEMTIME), your gateway to academic excellence. Our IIT JAM Chemistry course is meticulously designed to provide you with an unparalleled learning experience. Here are the key highlights and answers to your frequently asked questions about our IIT JAM Chemistry program:</p>

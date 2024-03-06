@@ -4,7 +4,7 @@ import './CourseHeroSection.scss'
 const CourseHeroSection = ({imgSrc,hd1,hd2}) => {
     return (
         <div className="course-hero-section">
-            <img src={imgSrc} className='heroimage' alt="" />
+            <img src={imgSrc} className='heroimage' alt="banner image for online course" loading="lazy"/>
 
             {/* <div className='detail'>
                 <h1>{hd1}</h1>

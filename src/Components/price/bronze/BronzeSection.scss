@@ -2,13 +2,20 @@
   font-family: "Poppins";
   margin-bottom: 2vw;
 
+
+
   .price-template {
     display: flex;
     flex-direction: column;
-    box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
-    width: 28vw;
-    margin-right: 4vw;
+    // box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
+    width: 16vw;
+    margin-right: 0.5vw;
     margin-bottom: 2vw;
+    border-color: #845345;
+    border-style: dotted;
+    border-width: 2px;
+
+
 
     .head-section {
       background-color: #b97761;
@@ -19,8 +26,8 @@
         text-align: center;
         font-weight: 700;
         color: white;
-        font-size: 1.3vw;
-        border: 3px solid white;
+        font-size: 1vw;
+        border: 2px solid white;
       }
     }
 
@@ -28,22 +35,43 @@
       background-color: #f6f6f6;
       padding: 15px 12px;
 
+      .button-data {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 1vw;
+        margin-top: 1vw;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1vw;
+        font-weight: bold;
+        border-radius: 5vw;
+        cursor: pointer;
+      }
+
+      .button-data:hover {
+        background-color: #2D8EFF;
+      }
+
+
       .value {
         display: flex;
         justify-content: center;
-        gap: 5vw;
+        gap: 3vw;
         padding: 15px 0px;
-        border-bottom: 4px solid #b97761;
+        border-bottom: 2px solid #b97761;
+
+
 
         .right-value {
           color: #845345;
-          font-size: 1.5vw;
+          font-size: 1.2vw;
           font-weight: 700;
         }
 
         .left-value {
           color: black;
-          font-size: 1.5vw;
+          font-size: 1.2vw;
           font-weight: 700;
           position: relative;
 
@@ -51,12 +79,13 @@
             content: "";
             position: absolute;
             top: 50%;
-            left: -10px;
-            width: 100px;
+            left: -0.5vw;
+            width: 80px;
             height: 2px;
             background-color: black;
             transform: translateY(-50%);
           }
+
         }
       }
 
@@ -67,7 +96,7 @@
 
         .pri {
           color: #845345;
-          font-size: 1.1vw;
+          font-size: 0.8vw;
           font-weight: 700;
           line-height: 2rem;
         }
@@ -78,29 +107,30 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 3px dotted#B97761;
+        border-bottom: 2px dotted#B97761;
         padding: 5px 0px;
 
         .img-text {
           display: flex;
           gap: 0.9vw;
           align-items: center;
+          width: 10vw;
 
           img {
-            height: 1vw;
-            width: 1vw;
+            height: 0.8vw;
+            width: 0.8vw;
           }
 
           p {
             color: #845345;
-            font-size: 1vw;
+            font-size: 0.9vw;
             font-weight: 600;
           }
         }
 
         p {
           color: #845345;
-          font-size: 1vw;
+          font-size: 0.9vw;
           font-weight: 600;
         }
       }
@@ -110,29 +140,30 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 3px dotted#B97761;
+        border-bottom: 2px dotted#B97761;
         padding: 5px 0px;
 
         .img-text {
+          width: 10vw;
           display: flex;
           gap: 0.9vw;
           align-items: center;
 
           img {
-            height: 1vw;
-            width: 1vw;
+            height: 0.8vw;
+            width: 0.8vw;
           }
 
           p {
             color: #b97761;
-            font-size: 1vw;
+            font-size: 0.9vw;
             font-weight: 600;
           }
         }
 
         p {
           color: #b97761;
-          font-size: 1vw;
+          font-size: 0.9vw;
           font-weight: 600;
         }
       }
@@ -157,6 +188,8 @@
 @media screen and (max-width: "480px") {
   .price-container {
     margin-bottom: 5vw;
+    margin-top: 3vw;
+
     .price-template {
       width: 88vw;
 
@@ -166,12 +199,30 @@
         .text-head {
           padding: 11px 0px;
           text-align: center;
-          font-size: 3.5vw;
+          font-size: 5vw;
         }
       }
 
       .col-section {
         padding: 10px 10px;
+
+        .button-data {
+          background-color: black;
+          border: none;
+          color: white;
+          padding: 2vw;
+          margin-top: 4vw;
+          text-align: center;
+          text-decoration: none;
+          font-size: 3vw;
+          font-weight: bold;
+          border-radius: 5vw;
+          cursor: pointer;
+        }
+
+        .button-data:hover {
+          background-color: #2D8EFF;
+        }
 
         .value {
           gap: 23vw;
@@ -185,7 +236,14 @@
             font-size: 6vw;
 
             &::before {
-              width: 110px;
+              width: 35vw;
+              position: absolute;
+              top: 50%;
+              left: -6vw;
+              height: 2px;
+              background-color: black;
+              transform: translateY(-50%);
+
             }
           }
         }
@@ -197,51 +255,62 @@
           .pri {
             font-size: 4vw;
           }
+
+
+
+
         }
 
         .tags {
-          border-bottom: 3px dotted #b97761;
+          border-bottom: 2px dotted #b97761;
           padding: 8px 0px;
 
           .img-text {
+            width: 60vw;
+
             img {
-              height: 3vw;
-              width: 3vw;
+              margin-right: 2vw;
+              height: 4vw;
+              width: 4vw;
             }
 
             p {
-              font-size: 3vw;
+              font-size: 4vw;
             }
           }
 
           p {
-            font-size: 3vw;
+            font-size: 4vw;
           }
         }
 
         .live {
-          border-bottom: 3px dotted #b97761;
+          border-bottom: 2px dotted #b97761;
           padding: 8px 0px;
 
           .img-text {
+            width: 50vw;
+
             img {
-              height: 3vw;
-              width: 3vw;
+              margin-right: 2vw;
+              height: 4vw;
+              width: 4vw;
             }
 
             p {
-              font-size: 3vw;
+              font-size: 4vw;
             }
           }
 
           p {
-            font-size: 3vw;
+            font-size: 4vw;
           }
         }
 
+
         .btns {
           .read-more-btn {
-            font-size: 3vw;
+            font-size: 4vw;
           }
         }
       }

@@ -58,10 +58,10 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     window.innerWidth > 600 ? (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc1} className="heroimage" alt="" />
+                                <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc2} className="heroimage" alt="" />
+                                <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy"/>
                             </SwiperSlide>
                             {/* <SwiperSlide>
                                 <img src={imgSrc5} className="heroimage" alt="" />
@@ -70,10 +70,10 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     ) : (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc6} className="heroimage" alt="" />
+                                <img src={imgSrc6} className="heroimage" alt="" loading="lazy"/>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc7} className="heroimage" alt="" />
+                                <img src={imgSrc7} className="heroimage" alt="" loading="lazy"/>
                             </SwiperSlide>
                         </>
                     )

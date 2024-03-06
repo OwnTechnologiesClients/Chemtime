@@ -6,6 +6,7 @@ import SilverSection from '../../price/silver/SilverSection';
 import GoldSection from '../../price/gold/GoldSection';
 import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
+import Tabs from '../../tabs/Tabs';
 
 const GateOnline = () => {
   let tableFields = [
@@ -58,7 +59,7 @@ const GateOnline = () => {
         <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
       </Helmet>
 
-      <img src={courseImage} alt="" /><br></br><br></br><br></br>
+      {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
       <h1>GATE Chemistry Online Batch: Your Path to Success</h1>
       <p>At ASAP Institute (formerly CHEMTIME), we understand the importance of quality education and flexible learning options. Our GATE Chemistry Online Batch offers a comprehensive and flexible approach to GATE exam preparation. Whether you are a working professional, a student, or someone seeking to master GATE Chemistry, our courses are designed to meet your specific needs.</p>
@@ -80,16 +81,7 @@ const GateOnline = () => {
 
 
 
-      <div className='pricing-row'>
-        <BronzeSection />
-        <SilverSection />
-
-      </div>
-      <div className='pricing-row'>
-        <GoldSection />
-        <PlatinumSection />
-
-      </div>
+      <Tabs/>
       
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 

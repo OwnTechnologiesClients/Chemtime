@@ -8,6 +8,11 @@ import BronzeSection from '../../price/bronze/BronzeSection';
 import SilverSection from '../../price/silver/SilverSection';
 import GoldSection from '../../price/gold/GoldSection';
 import PlatinumSection from '../../price/platinum/PlatinumSection';
+import BronzeOneYearSection from '../../price/bronze/oneYear/BronzeOneYearSection';
+import GoldOneYearSection from '../../price/gold/oneYear/GoldOneYearSection';
+import SilverOneYearSection from '../../price/silver/oneYear/SilverOneYearSection';
+import PlatinumOneYearSection from '../../price/platinum/oneYear/PlatinumOneYearSection';
+import Tabs from '../../tabs/Tabs';
 
 
 const CsirOnline = () => {
@@ -64,7 +69,7 @@ const CsirOnline = () => {
         <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
       </Helmet>
 
-      <img src={courseImage} alt="" /><br></br><br></br><br></br>
+      {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
       <h1>CSIR NET Chemical Sciences Online Batches: Your Gateway to Success</h1>
       <p>Welcome to ASAP Institute's CSIR NET Chemical Sciences Online Batches, designed to pave your way to success in the CSIR NET Chemical Sciences examination. We offer a range of meticulously designed courses to cater to your specific needs. Here are the key features and answers to your frequently asked questions about our CSIR NET Chemical Sciences Online Batches:</p>
 
@@ -79,25 +84,38 @@ const CsirOnline = () => {
         <li> • <h6>Regular Assessments:</h6> We provide regular topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and weaknesses better.</li>
       </ul>
 
-      <h3>Batch Details:</h3>
+      {/* <h3>Batch Details:</h3>
       <ol>
         <li> • <h6>CSIR NET (Chemical Science) - 6 Months - Regular - Online Live + Recorded</h6><br />A 6-months intensive course with regular live classes and access to recorded lectures for flexible learning.</li>
         <li> • <h6>CSIR-NET (Chemical Science) - 1 Year - Weekend - Online Live + Recorded</h6><br />A 1-year course designed for weekend learning, featuring live online classes and recorded lectures for convenient studying.</li>
         <li> • <h6>CSIR-NET (Chemical Science) - 6 Months, 1 Year, and 2 Years - Recorded</h6><br />Choose from 6-months, 1-year, or 2-year durations to access recorded lectures that allow you to study at your own pace.</li>
-      </ol>
+      </ol> */}
 
+      <Tabs />
 
-      <div className='pricing-row'>
+      {/* <div className='pricing-row'>
         <BronzeSection />
+        <BronzeOneYearSection />
+        <BronzeSection />
+        <BronzeOneYearSection />
+
+      </div> */}
+
+      {/* <div className='pricing-row'>
         <SilverSection />
+        <SilverOneYearSection/>
+      </div> */}
 
-      </div>
-      <div className='pricing-row'>
+      {/* <div className='pricing-row'>
         <GoldSection />
+        <GoldOneYearSection/>
+      </div> */}
+
+      {/* <div className='pricing-row'>
         <PlatinumSection />
-
-      </div>
-
+        <PlatinumOneYearSection/>
+        
+      </div> */}
 
       {/* <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
       <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} /> */}

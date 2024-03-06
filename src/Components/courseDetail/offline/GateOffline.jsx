@@ -31,7 +31,7 @@ const GateOffline = () => {
                 <meta name="description" content="Achieve success with ASAP Institute's GATE Chemistry Offline Course. Expert faculty, comprehensive syllabus, and flexible batches. Enroll for a bright future!" />
                 <meta name="keywords" content="GATE Chemistry coaching Delhi, Offline coaching for GATE Chemistry in Delhi, Best coaching institute for GATE Chemistry, Top GATE Chemistry coaching centers in Delhi, Classroom coaching for GATE Chemistry, GATE Chemistry coaching classes Delhi, Coaching for GATE Chemistry offline" />
             </Helmet>
-            <img src={courseImage} alt="" /><br></br><br></br><br></br>
+            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
             <h1>GATE Chemistry Offline Course: Fueling Your Path to Success</h1>
             <p>Welcome to the GATE Chemistry Offline Course at ASAP Institute (formerly CHEMTIME), where we are dedicated to providing you with the ultimate tools for success. Our GATE Chemistry course has been meticulously crafted to offer you a comprehensive and well-rounded learning experience. Here, we present the pivotal features and answers to some of the most commonly asked questions about our GATE Chemistry Offline Course:</p>

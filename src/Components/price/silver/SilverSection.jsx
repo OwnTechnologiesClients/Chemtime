@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../silver/SilverSection.scss";
 import Tick from "../../../assets/icons/silver-tick.png";
 import Cross from "../../../assets/icons/silver-cross.png";
+import { Link } from 'react-router-dom';
+
 
 const SilverSection = () => {
   const [showAll, setShowAll] = useState(false);
@@ -13,14 +15,18 @@ const SilverSection = () => {
   return (
     <main className="silver-price-container">
       <div className="price-template">
-        <section className="silver-head-section">
-          <h3 className="text-head">SILVER</h3>
+        <section className="head-section">
+          <h3 className="text-head">SILVER 6 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
             <span className="right-value">₹ 6,999</span>
             <span className="left-value">₹ 23,539</span>
+          </div>
+
+          <div className="button-data">
+            <Link to='https://rzp.io/l/eLDbKcM' target="_blank">Enroll Now</Link>
           </div>
 
           <div className="pricing">

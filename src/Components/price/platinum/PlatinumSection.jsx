@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../platinum/PlatinumSection.scss";
 import Tick from "../../../assets/icons/platinum-tick.png";
 import Cross from "../../../assets/icons/platinum-cross.png";
+import { Link } from 'react-router-dom';
+
 
 const PlatinumSection = () => {
   const [showAll, setShowAll] = useState(false);
@@ -14,13 +16,17 @@ const PlatinumSection = () => {
     <main className="platinum-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">PLATINUM</h3>
+          <h3 className="text-head">PLATINUM 6 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
             <span className="right-value">₹ 16,180</span>
             <span className="left-value">₹ 38,186</span>
+          </div>
+
+          <div className="button-data">
+            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
           </div>
 
           <div className="pricing">

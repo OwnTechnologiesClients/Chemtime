@@ -25,7 +25,7 @@ const CuetOffline = () => {
                 <meta name="description" content="Join ASAP Institute for CUET(PG) Chemistry coaching in Delhi with expert faculty, comprehensive syllabus coverage, and flexible batch options. Enroll now for success!" />
                 <meta name="keywords" content="CUET (PG) Chemistry coaching Delhi, Offline coaching for CUET (PG) Chemistry in Delhi, Best coaching institute for CUET (PG) Chemistry, Top CUET (PG) Chemistry coaching centers in Delhi, Classroom coaching for CUET (PG) Chemistry, CUET (PG) Chemistry coaching classes Delhi" />
             </Helmet>
-            <img src={courseImage} alt="" /><br></br><br></br><br></br>
+            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
             <h1>CUET(PG) Chemistry - Paving Your Way to Academic Excellence</h1>
             <p>Welcome to ASAP Institute's CUET(PG) Chemistry coaching, where your academic aspirations find the perfect foundation. Our comprehensive CUET(PG) Chemistry program is meticulously designed to help you excel in this competitive examination. Here, we present an overview of the key features, course details, and frequently asked questions about our CUET(PG) Chemistry coaching.</p>

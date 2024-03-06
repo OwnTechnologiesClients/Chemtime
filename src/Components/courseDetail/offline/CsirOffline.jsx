@@ -32,7 +32,7 @@ const Csir = () => {
                 <meta name="keywords" content="CSIR NET Chemical Sciences coaching Delhi, Offline coaching for CSIR NET Chemical Sciences in Delhi,Best coaching institute for CSIR NET Chemical Sciences,Top CSIR NET Chemical Sciences coaching centers in Delhi, Classroom coaching for CSIR NET Chemical Sciences" />
             </Helmet>
 
-            <img src={courseImage} alt="" /><br></br><br></br><br></br>
+            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
             <h1>CSIR NET Chemical Sciences Offline Course</h1>
             <p>Are you aspiring to excel in the CSIR NET Chemical Sciences examination? At ASAP Institute (formerly CHEMTIME), we offer a comprehensive offline coaching program designed to empower students with the knowledge and skills needed to succeed in this highly competitive exam.</p>

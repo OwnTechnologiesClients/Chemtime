@@ -6,6 +6,7 @@ import SilverSection from '../../price/silver/SilverSection';
 import GoldSection from '../../price/gold/GoldSection';
 import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
+import Tabs from '../../tabs/Tabs';
 
 
 const CuetOnline = () => {
@@ -48,7 +49,7 @@ const CuetOnline = () => {
                 <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
             </Helmet>
 
-            <img src={courseImage} alt="" /><br></br><br></br><br></br>
+            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
             <h1>CUET(PG) Chemistry – Your Gateway to Academic Excellence</h1>
             <p>Welcome to the CUET(PG) Chemistry Online Batch at ASAP Institute (formerly CHEMTIME). Our carefully crafted online program is designed to facilitate your journey towards academic excellence, enabling you to excel in your postgraduate chemistry studies. Whether you are a working professional, a dedicated student, or someone looking to conquer the CUET(PG) Chemistry exam, our courses are tailored to meet your unique needs.</p>
@@ -62,23 +63,10 @@ const CuetOnline = () => {
                 <li> • <h6>Flexible Batches:</h6> We offer various batch options, including a 6-month regular batch, a 1-year weekend batch with live online classes and recorded content, and recorded course options spanning 6 months, 1 year, and 2 years. This flexibility ensures that you can choose a batch that aligns with your schedule.</li>
             </ul>
 
-            <h3>Batch Details:</h3>
-            <ul>
-                <li> • <h6>CUET(PG) Chemistry (6 Months - Regular):</h6> A six-month, regular program tailored for those who prefer an intensive learning schedule.</li>
-                <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
-            </ul>
 
 
-            <div className='pricing-row'>
-                <BronzeSection />
-                <SilverSection />
-
-            </div>
-            <div className='pricing-row'>
-                <GoldSection />
-                <PlatinumSection />
-
-            </div>
+            <Tabs />
+           
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>

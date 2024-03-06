@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Course.scss";
+import '../../Components/courseDetail/online/Online.scss'
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
 import Footer from "../../Components/footer/Footer";
@@ -19,6 +20,7 @@ import JamOnline from "../../components/courseDetail/online/JamOnline";
 import CuetOnline from "../../components/courseDetail/online/CuetOnline";
 import CourseHeroSection from "../../components/courseHeroSection/CourseHeroSection";
 import { useNavigate, useParams } from "react-router-dom";
+import BronzeSection from "../../Components/price/bronze/BronzeSection";
 
 const OnlineCourse = () => {
   const { id } = useParams();
@@ -94,6 +96,8 @@ const OnlineCourse = () => {
                     </div> */}
         </div>
       </div>
+
+      {/* <BronzeSection/> */}
       <WhatsappIcon />
       <Footer />
     </div>

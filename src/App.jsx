@@ -11,7 +11,7 @@ import PopularVideos from "./pages/popularVideos/PopularVideos";
 import About from "./pages/aboutus/About";
 import Admin from "./pages/admin/Admin";
 import Contact from "./pages/contactus/Contact";
-import SearchUser from "./pages/admin/searchUser/SearchUser";
+// import SearchUser from "./pages/admin/searchUser/SearchUser";
 import FormPrint from "./pages/studentZone/history/formPrint/FormPrint";
 import RefundPolicy from "./Pages/refundPolicy/RefundPolicy";
 import Result from "./pages/result/Result";
@@ -26,12 +26,13 @@ import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
 import TermCondition from "./Pages/termCondition/TermCondition";
 import ShippingPolicy from "./Pages/shippingPolicy/ShippingPolicy";
-import TopCourses from "./pages/topCourses/TopCourses";
+// import TopCourses from "./pages/topCourses/TopCourses";
 import TopCourseIitJam from "./pages/topCourses/TopCourseIitJam";
 import TopCourseCsir from "./pages/topCourses/TopCourseCsir";
 import TopCourseGate from "./pages/topCourses/TopCourseGate";
-import Scholarship from "./pages/scholarship/Scholarship";
-import Price from "./Components/price/Price";
+// import Scholarship from "./pages/scholarship/Scholarship";
+// import Price from "./Components/price/Price";
+// import Tabs from "./Components/tabs/Tabs";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <BrowserRouter>
         <ScrollToTop>
           <Routes>
+            <Route path='/*' element={<Home />} />
             <Route path="/" element={<Home />} />
             <Route path="/onlinecourses/:id" element={<OnlineCourse />} />
             <Route path="/offlinecourses/:id" element={<OfflineCourse />} />
@@ -52,14 +54,14 @@ function App() {
             <Route path="/iit-jam" element={<TopCourseIitJam />} />
             <Route path="/csir-net-jrf" element={<TopCourseCsir />} />
             <Route path="/gate" element={<TopCourseGate />} />
-            <Route path="/scholarship" element={<Scholarship />} />
+            {/* <Route path="/scholarship" element={<Scholarship />} /> */}
 
 
             <Route path="/admin" element={<Admin />} />
             <Route path="/student-login" element={<Login />} />
             <Route path="/student-signup" element={<StudentSignup />} />
             <Route path="/history" element={<History />} />
-            <Route path="/searchuser" element={<SearchUser />} />
+            {/* <Route path="/searchuser" element={<SearchUser />} /> */}
 
             <Route path="/form-print" element={<FormPrint />} />
             <Route path="/refund-policy" element={<RefundPolicy />} />
@@ -71,7 +73,9 @@ function App() {
             <Route path="/payment" element={<Phonepe />} />
             <Route path="/success" element={<Success />} />
             <Route path="/failure" element={<Failure />} />
-            <Route path="/price" element={<Price />} />
+            {/* <Route path="/price" element={<Price />} /> */}
+            {/* <Route path="/tabs" element={<Tabs />} /> */}
+
           </Routes>
         </ScrollToTop>
       </BrowserRouter>

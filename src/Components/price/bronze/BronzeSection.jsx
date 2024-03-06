@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./BronzeSection.scss";
 import Tick from "../../../assets/icons/tick.png";
 import Cross from "../../../assets/icons/cross.png";
+import { Link } from 'react-router-dom';
 
 const BronzeSection = () => {
   const [showAll, setShowAll] = useState(false);
@@ -14,13 +15,17 @@ const BronzeSection = () => {
     <main className="price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">BRONZE</h3>
+          <h3 className="text-head">BRONZE 6 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
             <span className="right-value">₹ 4,999</span>
             <span className="left-value">₹ 12,095</span>
+          </div>
+
+          <div className="button-data">
+            <Link to='https://rzp.io/l/oZBrCTEBT' target="_blank">Enroll Now</Link>
           </div>
 
           <div className="pricing">
@@ -89,7 +94,7 @@ const BronzeSection = () => {
               <p>Unitwise Tests</p>
             </div>
             <p className="inr">
-              ₹ 499 Per <br /> 39 Tests
+              ₹ 499 Per <br /> 39*1 Tests
             </p>
           </div>
           <div className="tags">

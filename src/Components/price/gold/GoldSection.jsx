@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../gold/GoldSection.scss";
 import Tick from "../../../assets/icons/gold-tick.png";
 import Cross from "../../../assets/icons/gold-cross.png";
+import { Link } from 'react-router-dom';
+
 
 const GoldSection = () => {
   const [showAll, setShowAll] = useState(false);
@@ -14,13 +16,17 @@ const GoldSection = () => {
     <main className="gold-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">GOLD</h3>
+          <h3 className="text-head">GOLD 6 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
             <span className="right-value">₹ 8,999</span>
             <span className="left-value">₹ 31,590</span>
+          </div>
+
+          <div className="button-data">
+            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
           </div>
 
           <div className="pricing">
@@ -69,19 +75,19 @@ const GoldSection = () => {
           <div className="live">
             <div className="img-text">
               <img src={Cross} alt="" />
-              <p>
+              <p style={{ color: "#DBB900" }}>
                 3000+ Questions <br />
                 Practice Books hard Copy
               </p>
             </div>
-            <p>₹ 2999</p>
+            <p style={{ color: "#DBB900" }}>₹ 2999</p>
           </div>
           <div className="live">
             <div className="img-text">
               <img src={Cross} alt="" />
-              <p>Subtopicwise Tests</p>
+              <p style={{ color: "#DBB900" }}>Subtopicwise Tests</p>
             </div>
-            <p>₹ 499</p>
+            <p style={{ color: "#DBB900" }}>₹ 499</p>
           </div>
           <div className="tags">
             <div className="img-text">
@@ -104,12 +110,12 @@ const GoldSection = () => {
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
-                  <p>
+                  <p style={{ color: "#DBB900" }}>
                     Previous Year <br />
                     Questions Tests
                   </p>
                 </div>
-                <p>₹ 499</p>
+                <p style={{ color: "#DBB900" }}>₹ 499</p>
               </div>
               <div className="tags">
                 <div className="img-text">
@@ -124,29 +130,29 @@ const GoldSection = () => {
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
-                  <p>
+                  <p style={{ color: "#DBB900" }}>
                     Subtopicwise <br />
                     PYQs Books hard Copy
                   </p>
                 </div>
-                <p>₹ 1100</p>
+                <p style={{ color: "#DBB900" }}>₹ 1100</p>
               </div>
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
-                  <p>Theory Booklets</p>
+                  <p style={{ color: "#DBB900" }}>Theory Booklets</p>
                 </div>
-                <p>₹ 6000</p>
+                <p style={{ color: "#DBB900" }}>₹ 6000</p>
               </div>
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
-                  <p>
+                  <p style={{ color: "#DBB900" }}>
                     30 Days Crash <br />
                     Course & Test Series
                   </p>
                 </div>
-                <p>₹ 1100</p>
+                <p style={{ color: "#DBB900" }}>₹ 1100</p>
               </div>
               <div className="tags">
                 <div className="img-text">
