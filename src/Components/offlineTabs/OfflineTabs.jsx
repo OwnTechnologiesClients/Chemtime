@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from '../navbar/Navbar';
+import OfflineOneYearPrice from "../offlineOneYearPrice/OfflineOneYearPrice";
+import OfflineSixMonthPrice from "../offlineSixMonthPrice/OfflineSixMonthPrice";
 import OneYearPrice from "../oneYearPrice/OneYearPrice";
 import BronzeSection from "../price/bronze/BronzeSection";
 import GoldSection from "../price/gold/GoldSection";
@@ -8,19 +10,19 @@ import SixMonthPrice from "../sixMonthPrice/SixMonthPrice";
 import "./OfflineTabs.scss";
 
 
-const Tabs = () => {
+const OfflineTabs = () => {
     const [currentTab, setCurrentTab] = useState('1');
 
     const tabs = [
         {
             id: 1,
             tabTitle: '6 Months Plan',
-            title: <SixMonthPrice/>,
+            title: <OfflineSixMonthPrice/>,
         },
         {
             id: 2,
             tabTitle: '1 Year Plan',
-            title: <OneYearPrice/>,
+            title: <OfflineOneYearPrice/>,
         },
         
 
@@ -31,7 +33,7 @@ const Tabs = () => {
     }
     return (
         <div className='container'>
-            <div className='tabs'>
+            <div className='offline-tabs'>
                 {tabs.map((tab, i) =>
                     <button
                         key={i}
@@ -64,4 +66,4 @@ const Tabs = () => {
     )
 }
 
-export default Tabs
+export default OfflineTabs

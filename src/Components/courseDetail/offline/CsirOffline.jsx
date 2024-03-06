@@ -4,6 +4,7 @@ import CourseTable from '../../courseTable/CourseTable'
 import PlatinumSection from '../../price/platinum/PlatinumSection';
 
 import { Helmet } from "react-helmet";
+import OfflineTabs from '../../offlineTabs/OfflineTabs';
 
 const Csir = () => {
 
@@ -57,7 +58,7 @@ const Csir = () => {
 
 
             <div className='pricing-row'>
-                <PlatinumSection />
+                <OfflineTabs />
             </div>
 
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>

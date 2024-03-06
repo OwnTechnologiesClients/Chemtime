@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "../SilverSection.scss";
-import Tick from "../../../../assets/icons/silver-tick.png";
-import Cross from "../../../../assets/icons/silver-cross.png";
+import "../diamond/DiamondSection.scss";
+import Tick from "../../../assets/icons/diamond-tick.png";
+import Cross from "../../../assets/icons/diamond-cross.png";
 import { Link } from 'react-router-dom';
 
-const SilverOneYearSection = () => {
+
+const DiamondSection = () => {
   const [showAll, setShowAll] = useState(false);
 
   const handleReadMoreClick = () => {
@@ -12,20 +13,20 @@ const SilverOneYearSection = () => {
   };
 
   return (
-    <main className="silver-price-container">
+    <main className="diamond-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">SILVER 1 Year</h3>
+          <h3 className="text-head">Diamond 6 Months</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 11,999</span>
-            <span className="left-value">₹ 33,593</span>
+            <span className="right-value">₹ 34,180</span>
+            {/* <span className="left-value">₹ 38,186</span> */}
           </div>
 
           <div className="button-data">
-            <Link to='https://rzp.io/l/dmPQOloF' target="_blank">Enroll Now</Link>
+            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
           </div>
 
           <div className="pricing">
@@ -36,23 +37,23 @@ const SilverOneYearSection = () => {
           <div className="tags">
             <div className="img-text">
               <img src={Cross} alt="" />
-              <p style={{ color: "#A1A6AA" }}>Pre Recorded Lectures</p>
+              <p style={{ color: "#628EA4" }}>Pre Recorded Lectures</p>
             </div>
-            <p style={{ color: "#A1A6AA" }} className="inr">₹ 6999</p>
+            <p style={{ color: "#628EA4" }}className="inr">₹ 6999</p>
           </div>
           <div className="live">
             <div className="img-text">
-              <img src={Tick} alt="" />
-              <p style={{ color: "#6A6E71" }}>Live Sessions</p>
+              <img src={Cross} alt="" />
+              <p style={{ color: "#628EA4" }}>Live Sessions</p>
             </div>
-            <p style={{ color: "#6A6E71" }}>₹ 9999</p>
+            <p style={{ color: "#628EA4" }}>₹ 9999</p>
           </div>
           <div className="live">
             <div className="img-text">
-              <img src={Tick} alt="" />
-              <p style={{ color: "#6A6E71" }}>Recording of Live Sessions</p>
+              <img src={Cross} alt="" />
+              <p style={{ color: "#628EA4" }}>Recording of Live Sessions</p>
             </div>
-            <p style={{ color: "#6A6E71" }}>₹ 7999</p>
+            <p style={{ color: "#628EA4" }}>₹ 7999</p>
           </div>
           <div className="tags">
             <div className="img-text">
@@ -73,7 +74,7 @@ const SilverOneYearSection = () => {
           </div>
           <div className="live">
             <div className="img-text">
-              <img src={Cross} alt="" />
+              <img src={Tick} alt="" />
               <p>
                 3000+ Questions <br />
                 Practice Books hard Copy
@@ -83,7 +84,7 @@ const SilverOneYearSection = () => {
           </div>
           <div className="live">
             <div className="img-text">
-              <img src={Cross} alt="" />
+              <img src={Tick} alt="" />
               <p>Subtopicwise Tests</p>
             </div>
             <p>₹ 499</p>
@@ -108,7 +109,7 @@ const SilverOneYearSection = () => {
             <>
               <div className="live">
                 <div className="img-text">
-                  <img src={Cross} alt="" />
+                  <img src={Tick} alt="" />
                   <p>
                     Previous Year <br />
                     Questions Tests
@@ -128,7 +129,7 @@ const SilverOneYearSection = () => {
               </div>
               <div className="live">
                 <div className="img-text">
-                  <img src={Cross} alt="" />
+                  <img src={Tick} alt="" />
                   <p>
                     Subtopicwise <br />
                     PYQs Books hard Copy
@@ -138,14 +139,14 @@ const SilverOneYearSection = () => {
               </div>
               <div className="live">
                 <div className="img-text">
-                  <img src={Cross} alt="" />
+                  <img src={Tick} alt="" />
                   <p>Theory Booklets</p>
                 </div>
                 <p>₹ 6000</p>
               </div>
               <div className="live">
                 <div className="img-text">
-                  <img src={Cross} alt="" />
+                  <img src={Tick} alt="" />
                   <p>
                     30 Days Crash <br />
                     Course & Test Series
@@ -187,4 +188,4 @@ const SilverOneYearSection = () => {
   );
 };
 
-export default SilverOneYearSection;
+export default DiamondSection;

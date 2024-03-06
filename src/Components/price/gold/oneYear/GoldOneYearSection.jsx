@@ -25,7 +25,7 @@ const GoldOneYearSection = () => {
           </div>
 
           <div className="button-data">
-            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
+            <Link to='https://rzp.io/l/3WCBYcmJk' target="_blank">Enroll Now</Link>
           </div>
 
 

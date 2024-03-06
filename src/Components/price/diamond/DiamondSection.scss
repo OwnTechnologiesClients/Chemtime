@@ -1,19 +1,18 @@
-.platinum-price-container {
+.diamond-price-container {
   font-family: "Poppins";
+  
 
   .price-template {
     display: flex;
     flex-direction: column;
     // box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
     width: 16vw;
-    border-color: #000000;
+    border-color: #3598C9;
     border-style: dotted;
     border-width: 2px;
 
-
-
     .head-section {
-      background-color: #000000;
+      background-color: #3598C9;
       padding: 10px 20px;
 
       .text-head {
@@ -52,10 +51,10 @@
         justify-content: center;
         gap: 3vw;
         padding: 15px 0px;
-        border-bottom: 2px solid #000000;
+        border-bottom: 2px solid #3598C9;
 
         .right-value {
-          color: #000000;
+          color: #3598C9;
           font-size: 1.2vw;
           font-weight: 700;
         }
@@ -85,7 +84,7 @@
         padding: 7px 0px;
 
         .pri {
-          color: #000000;
+          color: #3598C9;
           font-size: 0.8vw;
           font-weight: 700;
           line-height: 2rem;
@@ -97,7 +96,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 2px dotted#000000;
+        border-bottom: 2px dotted#3598C9;
         padding: 5px 0px;
 
         .img-text {
@@ -112,14 +111,14 @@
           }
 
           p {
-            color: #000000;
+            color: #3598C9;
             font-size: 0.9vw;
             font-weight: 600;
           }
         }
 
         p {
-          color: #000000;
+          color: #3598C9;
           font-size: 0.9vw;
           font-weight: 600;
         }
@@ -130,7 +129,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 2px dotted#000000;
+        border-bottom: 2px dotted#3598C9;
         padding: 5px 0px;
 
         .img-text {
@@ -145,14 +144,14 @@
           }
 
           p {
-            color: #000000;
+            color: #3598C9;
             font-size: 0.9vw;
             font-weight: 600;
           }
         }
 
         p {
-          color: #000000;
+          color: #3598C9;
           font-size: 0.9vw;
           font-weight: 600;
         }
@@ -167,7 +166,7 @@
           margin-top: 2vw;
           border: none;
           font-size: 1.1vw;
-          color: #000000;
+          color: #3598C9;
           font-weight: 700;
         }
       }
@@ -176,9 +175,9 @@
 }
 
 @media screen and (max-width: "480px") {
-  .platinum-price-container {
-    margin-bottom: 5vw;
-    margin-top: 3vw;
+  .diamond-price-container {
+    margin-bottom: 2vw;
+    margin-top: 5vw;
 
     .price-template {
       width: 88vw;
@@ -248,7 +247,7 @@
         }
 
         .tags {
-          border-bottom: 2px dotted #000000;
+          border-bottom: 2px dotted #3598C9;
           padding: 8px 0px;
 
           .img-text {
@@ -271,7 +270,7 @@
         }
 
         .live {
-          border-bottom: 2px dotted #000000;
+          border-bottom: 2px dotted #3598C9;
           padding: 8px 0px;
 
           .img-text {

@@ -1,19 +1,13 @@
 import React from 'react'
 import "./OfflineSixMonthPrice.scss";
-
-import BronzeSection from '../price/bronze/BronzeSection'
-import BronzeOneYearSection from '../price/bronze/oneYear/BronzeOneYearSection'
-import SilverSection from '../price/silver/SilverSection';
-import GoldSection from '../price/gold/GoldSection';
 import PlatinumSection from '../price/platinum/PlatinumSection';
+import DiamondSection from '../price/diamond/DiamondSection';
 
 const OfflineSixMonthPrice = () => {
     return (
         <div className='pricing-row'>
-            <BronzeSection />
-            <SilverSection />
-            <GoldSection />
-            <PlatinumSection />
+           
+            <DiamondSection />
 
         </div>
     )
