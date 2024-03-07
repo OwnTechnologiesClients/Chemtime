@@ -24,7 +24,7 @@ const BronzeOneYearSection = () => {
             <span className="left-value">₹ 16,595</span>
           </div>
 
-          <Link to='https://rzp.io/l/hpWzUvAG' target="_blank">
+          <Link to='https://rzp.io/l/jD5Shz6' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>

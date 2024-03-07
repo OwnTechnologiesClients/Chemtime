@@ -25,7 +25,7 @@ const SilverSection = () => {
             <span className="left-value">₹ 23,539</span>
           </div>
           
-          <Link to='https://rzp.io/l/eLDbKcM' target="_blank">
+          <Link to='https://rzp.io/l/AaA9xczPvf' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>
