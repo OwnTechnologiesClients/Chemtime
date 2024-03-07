@@ -64,7 +64,7 @@ const JamOnline = () => {
         <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
       </Helmet>
 
-      <img src={courseImage} alt="" /><br></br><br></br><br></br>
+      {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 
       <h1>IIT-JAM Chemistry Online Batch: Igniting Your Path to Excellence</h1>
       <p>Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination. Our courses are carefully crafted to cater to a diverse audience, be it a dedicated student, a working professional, or an eager learner with aspirations to excel in IIT-JAM Chemistry.</p>

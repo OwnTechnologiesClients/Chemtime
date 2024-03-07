@@ -7,6 +7,7 @@ import GoldSection from '../../price/gold/GoldSection';
 import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
 import Tabs from '../../tabs/Tabs';
+import CUETTabs from '../../cuetPrice/tabs/CUETTabs';
 
 
 const CuetOnline = () => {
@@ -65,7 +66,7 @@ const CuetOnline = () => {
 
 
 
-            <Tabs />
+            <CUETTabs />
            
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
