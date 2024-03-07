@@ -1,11 +1,6 @@
 import React from 'react'
-import courseImage from '../../../assets/gate-online.jpg'
-import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
-import BronzeSection from '../../price/bronze/BronzeSection';
-import SilverSection from '../../price/silver/SilverSection';
-import GoldSection from '../../price/gold/GoldSection';
-import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
+import GateTabs from '../../gatePrice/tabs/GateTabs';
 import Tabs from '../../tabs/Tabs';
 
 const GateOnline = () => {
@@ -81,7 +76,7 @@ const GateOnline = () => {
 
 
 
-      <Tabs/>
+      <GateTabs/>
       
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 

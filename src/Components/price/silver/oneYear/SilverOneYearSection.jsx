@@ -23,11 +23,11 @@ const SilverOneYearSection = () => {
             <span className="right-value">₹ 11,999</span>
             <span className="left-value">₹ 33,593</span>
           </div>
-
-          <div className="button-data">
-            <Link to='https://rzp.io/l/dmPQOloF' target="_blank">Enroll Now</Link>
-          </div>
-
+          <Link to='https://rzp.io/l/dmPQOloF' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
           <div className="pricing">
             <span className="pri">FEATURES</span>
             <span className="pri">PRICING</span>

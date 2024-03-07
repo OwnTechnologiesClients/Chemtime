@@ -25,6 +25,7 @@ const DiamondSection = () => {
             {/* <span className="left-value">₹ 38,186</span> */}
           </div>
 
+
           <div className="button-data">
             <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
           </div>

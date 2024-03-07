@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from '../navbar/Navbar';
 import OneYearPrice from "../oneYearPrice/OneYearPrice";
-import BronzeSection from "../price/bronze/BronzeSection";
-import GoldSection from "../price/gold/GoldSection";
-import SilverSection from "../price/silver/SilverSection";
 import SixMonthPrice from "../sixMonthPrice/SixMonthPrice";
 import "./Tabs.scss";
 

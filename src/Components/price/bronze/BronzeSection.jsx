@@ -24,10 +24,11 @@ const BronzeSection = () => {
             <span className="left-value">₹ 12,095</span>
           </div>
 
-          <div className="button-data">
-            <Link to='https://rzp.io/l/oZBrCTEBT' target="_blank">Enroll Now</Link>
-          </div>
-
+          <Link to='https://rzp.io/l/oZBrCTEBT' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
           <div className="pricing">
             <span className="pri">FEATURES</span>
             <span className="pri">PRICING</span>

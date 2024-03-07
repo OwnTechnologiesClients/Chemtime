@@ -24,11 +24,11 @@ const PlatinumSection = () => {
             <span className="right-value">₹ 16,180</span>
             <span className="left-value">₹ 38,186</span>
           </div>
-
-          <div className="button-data">
-            <Link to='https://rzp.io/l/jMBQa5vhi' target="_blank">Enroll Now</Link>
-          </div>
-
+          <Link to='https://rzp.io/l/jMBQa5vhi' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
           <div className="pricing">
             <span className="pri">FEATURES</span>
             <span className="pri">PRICING</span>
@@ -39,7 +39,7 @@ const PlatinumSection = () => {
               <img src={Tick} alt="" />
               <p style={{ color: "#000" }}>Pre Recorded Lectures</p>
             </div>
-            <p style={{ color: "#000" }}className="inr">₹ 6999</p>
+            <p style={{ color: "#000" }} className="inr">₹ 6999</p>
           </div>
           <div className="live">
             <div className="img-text">
@@ -70,7 +70,7 @@ const PlatinumSection = () => {
                 Practice Books Soft Copy
               </p>
             </div>
-            <p style={{ color: "#000" }}className="inr">₹ 1999</p>
+            <p style={{ color: "#000" }} className="inr">₹ 1999</p>
           </div>
           <div className="live">
             <div className="img-text">
@@ -103,7 +103,7 @@ const PlatinumSection = () => {
               <img src={Tick} alt="" />
               <p style={{ color: "#000" }}>Final Mock Test</p>
             </div>
-            <p style={{ color: "#000" }}className="inr">₹ 499</p>
+            <p style={{ color: "#000" }} className="inr">₹ 499</p>
           </div>
           {showAll && (
             <>
