@@ -7,6 +7,7 @@ import GoldSection from '../../price/gold/GoldSection';
 import PlatinumSection from '../../price/platinum/PlatinumSection';
 import { Helmet } from "react-helmet";
 import Tabs from '../../tabs/Tabs';
+import IITJamTabs from '../../iitJamPrice/tabs/IITJamTabs';
 
 const JamOnline = () => {
 
@@ -63,7 +64,7 @@ const JamOnline = () => {
         <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
       </Helmet>
 
-      {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
+      <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
       <h1>IIT-JAM Chemistry Online Batch: Igniting Your Path to Excellence</h1>
       <p>Welcome to the IIT-JAM Chemistry Online Batch by ASAP Institute, a transformative voyage towards conquering the IIT-JAM Chemistry examination. Our courses are carefully crafted to cater to a diverse audience, be it a dedicated student, a working professional, or an eager learner with aspirations to excel in IIT-JAM Chemistry.</p>
@@ -77,16 +78,10 @@ const JamOnline = () => {
         <li> • <h6>Flexible Batches:</h6> Tailor your learning experience to your schedule. We offer a 6-month regular batch, a 1-year weekend batch with live online classes, and recorded content options spanning 6 months, 1 year, and 2 years. Each option accommodates your unique learning style and pace.</li>
       </ul>
 
-      <h3>Batch Details:</h3>
-      <ul>
-        <li> • IIT-JAM Chemistry Online Batch (6 months - Regular)</li>
-        <li> • IIT-JAM Chemistry Online Batch (1 Year - Weekend)</li>
-        <li> • IIT-JAM Chemistry Online Batch (6 Months, 1 year, and 2 years Recorded)</li>
-      </ul>
+  
 
 
-
-      <Tabs />
+      <IITJamTabs />
 
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
