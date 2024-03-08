@@ -1,9 +1,9 @@
 import React from 'react'
 import courseImage from '../../../assets/cuet-offline.jpg'
-import CourseTable from '../../courseTable/CourseTable'
-import PlatinumSection from '../../price/platinum/PlatinumSection';
+
 
 import { Helmet } from "react-helmet";
+import CUETOfflineTabs from '../../cuetPrice/offline/offlineTabs/CUETOfflineTabs';
 
 
 const CuetOffline = () => {
@@ -25,7 +25,7 @@ const CuetOffline = () => {
                 <meta name="description" content="Join ASAP Institute for CUET(PG) Chemistry coaching in Delhi with expert faculty, comprehensive syllabus coverage, and flexible batch options. Enroll now for success!" />
                 <meta name="keywords" content="CUET (PG) Chemistry coaching Delhi, Offline coaching for CUET (PG) Chemistry in Delhi, Best coaching institute for CUET (PG) Chemistry, Top CUET (PG) Chemistry coaching centers in Delhi, Classroom coaching for CUET (PG) Chemistry, CUET (PG) Chemistry coaching classes Delhi" />
             </Helmet>
-            {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
+            <img src={courseImage} alt="" /><br></br><br></br><br></br>
 
             <h1>CUET(PG) Chemistry - Paving Your Way to Academic Excellence</h1>
             <p>Welcome to ASAP Institute's CUET(PG) Chemistry coaching, where your academic aspirations find the perfect foundation. Our comprehensive CUET(PG) Chemistry program is meticulously designed to help you excel in this competitive examination. Here, we present an overview of the key features, course details, and frequently asked questions about our CUET(PG) Chemistry coaching.</p>
@@ -41,17 +41,9 @@ const CuetOffline = () => {
                 <li> • <h6>Regular Assessments:</h6> We provide regular topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and weaknesses better.</li>
             </ul>
 
-            <h3>Batch Details:</h3>
-            <ul>
-                <li> • <h6>CUET(PG) Chemistry (6 Months - Regular):</h6> A six-month, regular program tailored for those who prefer an intensive learning schedule.</li>
-                <li> • <h6>CUET(PG) Chemistry (1 Year - Weekend):</h6> A one-year, weekend program that allows you to balance your studies with other commitments, making it ideal for working professionals or those with busy schedules.</li>
-            </ul>
 
+            <CUETOfflineTabs />
 
-
-            <div className='pricing-row'>
-                <PlatinumSection />
-            </div>
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>

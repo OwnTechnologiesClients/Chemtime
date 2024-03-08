@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Navbar from '../navbar/Navbar';
 import OfflineOneYearPrice from "../offlineOneYearPrice/OfflineOneYearPrice";
+//import OfflineSixMonthPrice from "../offlineSixMonthPrice/OfflineSixMonthPrice";
 import OfflineSixMonthPrice from "../offlineSixMonthPrice/OfflineSixMonthPrice";
+import "./GateOfflineTabs.scss";
 
-import "./OfflineTabs.scss";
 
-
-const OfflineTabs = () => {
+const GateOfflineTabs = () => {
     const [currentTab, setCurrentTab] = useState('1');
 
     const tabs = [
@@ -62,4 +61,4 @@ const OfflineTabs = () => {
     )
 }
 
-export default OfflineTabs
+export default GateOfflineTabs

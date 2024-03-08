@@ -1,17 +1,7 @@
 import React from 'react'
 import './Online.scss'
-import courseImage from '../../../assets/csir-net-online.jpg'
-import CourseTable from '../../courseTable/OnlineCourseTable'
 import { Helmet } from "react-helmet";
-import Section from '../../price/bronze/BronzeSection';
-import BronzeSection from '../../price/bronze/BronzeSection';
-import SilverSection from '../../price/silver/SilverSection';
-import GoldSection from '../../price/gold/GoldSection';
-import PlatinumSection from '../../price/platinum/PlatinumSection';
-import BronzeOneYearSection from '../../price/bronze/oneYear/BronzeOneYearSection';
-import GoldOneYearSection from '../../price/gold/oneYear/GoldOneYearSection';
-import SilverOneYearSection from '../../price/silver/oneYear/SilverOneYearSection';
-import PlatinumOneYearSection from '../../price/platinum/oneYear/PlatinumOneYearSection';
+
 import Tabs from '../../tabs/Tabs';
 
 

@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from "react";
-import Navbar from '../navbar/Navbar';
 import OfflineOneYearPrice from "../offlineOneYearPrice/OfflineOneYearPrice";
 import OfflineSixMonthPrice from "../offlineSixMonthPrice/OfflineSixMonthPrice";
+import "./IITJamOfflineTabs.scss";
 
-import "./OfflineTabs.scss";
 
-
-const OfflineTabs = () => {
+const IITJamOfflineTabs = () => {
     const [currentTab, setCurrentTab] = useState('1');
 
     const tabs = [
         {
             id: 1,
-            tabTitle: '6 Months Plan',
-            title: <OfflineSixMonthPrice/>,
+            tabTitle: '1 Year Plan',
+            title: <OfflineSixMonthPrice />,
         },
         {
             id: 2,
-            tabTitle: '1 Year Plan',
-            title: <OfflineOneYearPrice/>,
+            tabTitle: '2 Year Plan',
+            title: <OfflineOneYearPrice />,
         },
-        
+
 
 
     ]
@@ -62,4 +60,4 @@ const OfflineTabs = () => {
     )
 }
 
-export default OfflineTabs
+export default IITJamOfflineTabs

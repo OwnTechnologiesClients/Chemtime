@@ -21,13 +21,17 @@ const DiamondOneYearSection = () => {
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 45,000</span>
+            <span className="right-value">₹ 35,000</span>
+            <span className="left-value">₹ 60,000</span>
+
 
           </div>
 
-          <div className="button-data">
-            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
-          </div>
+          <Link to='https://rzp.io/l/JpP35yi' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
 
           <div className="pricing">
             <span className="pri">FEATURES</span>

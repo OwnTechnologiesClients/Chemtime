@@ -1,7 +1,6 @@
 import React from 'react'
 import courseImage from '../../../assets/csir-net-offline.jpg'
-import CourseTable from '../../courseTable/CourseTable'
-import PlatinumSection from '../../price/platinum/PlatinumSection';
+
 
 import { Helmet } from "react-helmet";
 import OfflineTabs from '../../offlineTabs/OfflineTabs';

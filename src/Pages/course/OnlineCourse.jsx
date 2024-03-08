@@ -20,7 +20,6 @@ import JamOnline from "../../components/courseDetail/online/JamOnline";
 import CuetOnline from "../../components/courseDetail/online/CuetOnline";
 import CourseHeroSection from "../../components/courseHeroSection/CourseHeroSection";
 import { useNavigate, useParams } from "react-router-dom";
-import BronzeSection from "../../Components/price/bronze/BronzeSection";
 
 const OnlineCourse = () => {
   const { id } = useParams();

@@ -1,9 +1,9 @@
 import React from 'react'
 import courseImage from '../../../assets/gate-offline.jpg'
 import CourseTable from '../../courseTable/CourseTable'
-import PlatinumSection from '../../price/platinum/PlatinumSection';
 
 import { Helmet } from "react-helmet";
+import GateOfflineTabs from '../../gatePrice/offline/offlineTabs/GateOfflineTabs';
 
 
 const GateOffline = () => {
@@ -47,17 +47,10 @@ const GateOffline = () => {
                 <li> • <h6>Regular Assessments:</h6> We provide routine topic-wise assessments to assess your progress. These assessments are followed by in-depth discussions to help you understand your strengths and areas needing improvement.</li>
             </ul>
 
-            <h3>Batch Details:</h3>
-            <ul>
-                <li> • <h6>GATE Chemistry Offline Classes (6 Months - Regular)</h6></li>
-                <li> • <h6>GATE Chemistry Offline Classes (1 Year - Weekend)</h6></li>
-            </ul>
+            
+            <GateOfflineTabs />
 
 
-
-            <div className='pricing-row'>
-                <PlatinumSection />
-            </div>
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>

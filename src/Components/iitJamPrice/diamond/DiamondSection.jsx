@@ -16,19 +16,20 @@ const DiamondSection = () => {
     <main className="diamond-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">Diamond 6 Months</h3>
+          <h3 className="text-head">Diamond 1 Year</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 34,180</span>
-            {/* <span className="left-value">₹ 38,186</span> */}
+            <span className="right-value">₹ 25,000</span>
+            <span className="left-value">₹ 40,000</span>
           </div>
 
-
-          <div className="button-data">
-            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
-          </div>
+          <Link to='https://rzp.io/l/DyxuNTMD' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
 
           <div className="pricing">
             <span className="pri">FEATURES</span>
@@ -40,7 +41,7 @@ const DiamondSection = () => {
               <img src={Cross} alt="" />
               <p style={{ color: "#628EA4" }}>Pre Recorded Lectures</p>
             </div>
-            <p style={{ color: "#628EA4" }}className="inr">₹ 6999</p>
+            <p style={{ color: "#628EA4" }} className="inr">₹ 6999</p>
           </div>
           <div className="live">
             <div className="img-text">

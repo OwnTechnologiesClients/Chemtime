@@ -1,14 +1,14 @@
 import React from 'react'
 import "./OneYearPrice.scss";
 
-import BronzeSection from '../price/bronze/BronzeSection'
-import BronzeOneYearSection from '../price/bronze/oneYear/BronzeOneYearSection'
-import SilverSection from '../price/silver/SilverSection';
-import GoldSection from '../price/gold/GoldSection';
-import PlatinumSection from '../price/platinum/PlatinumSection';
-import SilverOneYearSection from '../price/silver/oneYear/SilverOneYearSection';
-import GoldOneYearSection from '../price/gold/oneYear/GoldOneYearSection';
-import PlatinumOneYearSection from '../price/platinum/oneYear/PlatinumOneYearSection';
+import BronzeSection from '../csirPrice/bronze/BronzeSection'
+import BronzeOneYearSection from '../csirPrice/bronze/oneYear/BronzeOneYearSection'
+import SilverSection from '../csirPrice/silver/SilverSection';
+import GoldSection from '../csirPrice/gold/GoldSection';
+import PlatinumSection from '../csirPrice/platinum/PlatinumSection';
+import SilverOneYearSection from '../csirPrice/silver/oneYear/SilverOneYearSection';
+import GoldOneYearSection from '../csirPrice/gold/oneYear/GoldOneYearSection';
+import PlatinumOneYearSection from '../csirPrice/platinum/oneYear/PlatinumOneYearSection';
 
 const OneYearPrice = () => {
     return (

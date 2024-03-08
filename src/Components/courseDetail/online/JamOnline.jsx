@@ -1,10 +1,7 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-online.jpg'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
-import BronzeSection from '../../price/bronze/BronzeSection';
-import SilverSection from '../../price/silver/SilverSection';
-import GoldSection from '../../price/gold/GoldSection';
-import PlatinumSection from '../../price/platinum/PlatinumSection';
+
 import { Helmet } from "react-helmet";
 import Tabs from '../../tabs/Tabs';
 import IITJamTabs from '../../iitJamPrice/tabs/IITJamTabs';

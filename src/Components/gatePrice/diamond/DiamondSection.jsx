@@ -25,10 +25,11 @@ const DiamondSection = () => {
             {/* <span className="left-value">₹ 38,186</span> */}
           </div>
 
-
-          <div className="button-data">
-            <Link to='/onlinecourses/csir-net'>Enroll Now</Link>
-          </div>
+          <Link to='https://rzp.io/l/emP744McI' target="_blank">
+            <div className="button-data">
+              Enroll Now
+            </div>
+          </Link>
 
           <div className="pricing">
             <span className="pri">FEATURES</span>
@@ -40,7 +41,7 @@ const DiamondSection = () => {
               <img src={Cross} alt="" />
               <p style={{ color: "#628EA4" }}>Pre Recorded Lectures</p>
             </div>
-            <p style={{ color: "#628EA4" }}className="inr">₹ 6999</p>
+            <p style={{ color: "#628EA4" }} className="inr">₹ 6999</p>
           </div>
           <div className="live">
             <div className="img-text">

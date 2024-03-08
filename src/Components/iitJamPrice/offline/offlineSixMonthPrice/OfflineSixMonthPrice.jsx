@@ -1,6 +1,6 @@
 import React from 'react'
 import "./OfflineSixMonthPrice.scss";
-import DiamondSection from '../csirPrice/diamond/DiamondSection';
+import DiamondSection from '../../diamond/DiamondSection';
 
 const OfflineSixMonthPrice = () => {
     return (

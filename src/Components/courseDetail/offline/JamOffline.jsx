@@ -1,9 +1,9 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-offline.jpg'
-import CourseTable from '../../courseTable/CourseTable'
-import PlatinumSection from '../../price/platinum/PlatinumSection';
+
 
 import { Helmet } from "react-helmet";
+import IITJamOfflineTabs from '../../iitJamPrice/offline/offlineTabs/IITJamOfflineTabs';
 
 
 const JamOffline = () => {
@@ -55,18 +55,10 @@ const JamOffline = () => {
                 <li> • <h6>Regular Assessments:</h6> We provide frequent topic-wise assessments to gauge your progress. These assessments are followed by detailed discussions to help you understand your strengths and areas for improvement.</li>
             </ul>
 
-            <h3>Batch Details:</h3>
-            <ul>
-                <li> • <h6>IIT-JAM (Chemistry) - 6 Months - Regular</h6></li>
-                <li> • <h6>IIT-JAM (Chemistry) - 1 Year - Weekend</h6></li>
-                <li> • <h6>IIT-JAM (Chemistry) - 2 Years – Weekend</h6></li>
-            </ul>
+            
 
+            <IITJamOfflineTabs />
 
-
-            <div className='pricing-row'>
-                <PlatinumSection />
-            </div>
             <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>
