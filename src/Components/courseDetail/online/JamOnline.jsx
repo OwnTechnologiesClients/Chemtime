@@ -58,6 +58,7 @@ const JamOnline = () => {
         <meta charSet="utf-8" />
         <title>IIT-JAM Chemistry Online Coaching Delhi - Enroll for Academic Success</title>
         <meta name="description" content="Join ASAP Institute's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
+        <link rel="canonical" href="https://chemtime.co.in/onlinecourses/iit-jam" />
         <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
       </Helmet>
 

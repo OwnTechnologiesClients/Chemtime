@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './PopularVideos.scss';
 import Videoimg from '../../assets/video.png'
 import { VideoCard } from '../../components/cards/Cards'
 import Footer from '../../components/footer/Footer'
 import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
+import { Helmet } from "react-helmet";
+
 
 const PopularVideos = () => {
 
@@ -68,6 +69,13 @@ const PopularVideos = () => {
                 hd1={"POPULAR VIDEOS"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ASAP Institute: Study Material</title>
+                <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+                <link rel="canonical" href="https://chemtime.co.in/videos" />
+                <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+            </Helmet>
 
             <div className="popular-videos-section">
                 <h2 className='under-bar'><span>POPULAR</span> VIDEOS</h2>
@@ -93,7 +101,7 @@ const PopularVideos = () => {
 
                 <div className="main-video-section">
                     <h2 className='under-bar'>{activePlaylist}</h2>
-                    <iframe height="690" src={`https://www.youtube.com/embed/videoseries?si=Z02FiG3_6G0HTb2M&amp;list=${activePlaylistLink}`} title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen showinfo={1}></iframe>
+                    <iframe height="690" src={`https://www.youtube.com/embed/videoseries?si=Z02FiG3_6G0HTb2M&amp;list=${activePlaylistLink}`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen;" allowfullscreen showinfo={1}></iframe>
                 </div>
             </div>
 

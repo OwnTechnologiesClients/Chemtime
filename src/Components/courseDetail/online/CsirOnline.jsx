@@ -56,6 +56,7 @@ const CsirOnline = () => {
         <meta charSet="utf-8" />
         <title>ASAP Institute: CSIR NET Chemical Sciences Online Courses</title>
         <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+        <link rel="canonical" href="https://chemtime.co.in/onlinecourses/csir-net" />
         <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
       </Helmet>
 
@@ -83,29 +84,7 @@ const CsirOnline = () => {
 
       <Tabs />
 
-      {/* <div className='pricing-row'>
-        <BronzeSection />
-        <BronzeOneYearSection />
-        <BronzeSection />
-        <BronzeOneYearSection />
-
-      </div> */}
-
-      {/* <div className='pricing-row'>
-        <SilverSection />
-        <SilverOneYearSection/>
-      </div> */}
-
-      {/* <div className='pricing-row'>
-        <GoldSection />
-        <GoldOneYearSection/>
-      </div> */}
-
-      {/* <div className='pricing-row'>
-        <PlatinumSection />
-        <PlatinumOneYearSection/>
-        
-      </div> */}
+   
 
       {/* <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
       <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} /> */}

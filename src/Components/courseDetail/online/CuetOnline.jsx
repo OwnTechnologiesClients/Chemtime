@@ -41,6 +41,7 @@ const CuetOnline = () => {
                 <meta charSet="utf-8" />
                 <title>Enroll in CUET(PG) Chemistry Online Batch - ASAP Institute</title>
                 <meta name="description" content="Achieve academic excellence with ASAP Institute's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
+                <link rel="canonical" href="https://chemtime.co.in/onlinecourses/cuet" />
                 <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
             </Helmet>
 

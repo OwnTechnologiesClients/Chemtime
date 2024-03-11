@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './About.scss';
 import Footer from '../../components/footer/Footer'
 import WelcomeSection from '../../components/welcomeSection/WelcomeSection'
@@ -15,8 +14,10 @@ const About = () => {
         <div className='study-material-page'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>About Us</title>
-                <meta name="description" content="Description content" />
+                <title>ASAP Institute: About Us</title>
+                <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+                <link rel="canonical" href="https://chemtime.co.in/about" />
+                <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
             </Helmet>
             <Header1 />
             <Header2 />

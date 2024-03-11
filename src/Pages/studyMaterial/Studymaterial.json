@@ -1,5 +1,6 @@
 {
   "CSIR-NET Chemical Sciences": {
+    "url":"csir-net",
     "image": "/studymaterial/courseDetail.jpg",
     "courseLines": [
       "ChemTime offers Csir Net Chemical Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
@@ -10,6 +11,7 @@
     ]
   },
   "GATE Chemistry": {
+    "url":"gate",
     "image": "/studymaterial/courseDetail.jpg",
     "courseLines": [
       "ChemTime offers Csir GATE Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
@@ -20,6 +22,7 @@
     ]
   },
   "IIT-JAM Chemistry": {
+    "url":"iit-jam",
     "image": "/studymaterial/courseDetail.jpg",
     "courseLines": [
       "ChemTime offers Csir UPSC Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
@@ -30,6 +33,7 @@
     ]
   },
   "CUET (PG) Chemistry": {
+    "url":"cuet",
     "image": "/studymaterial/courseDetail.jpg",
     "courseLines": [
       "ChemTime offers Csir UPSC Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",

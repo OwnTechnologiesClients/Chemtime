@@ -51,7 +51,9 @@ const GateOnline = () => {
         <meta charSet="utf-8" />
         <title>GATE Chemistry Online Courses in Delhi - Enroll Now with ASAP</title>
         <meta name="description" content="Join ASAP Institute's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
+        <link rel="canonical" href="https://chemtime.co.in/onlinecourses/gate" />
         <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
+
       </Helmet>
 
       {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}

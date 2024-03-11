@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 
+
 const TopCourseCsir = () => {
   const [activeLink, setActiveLink] = useState("");
   const [coursesOpened, setCoursesOpened] = useState(false);
@@ -46,6 +47,7 @@ const TopCourseCsir = () => {
         <meta charSet="utf-8" />
         <title>CSIR NET JRF Coaching for Chemical Sciences: ASAP Institute</title>
         <meta name="description" content="CSIR NET JRF Chemistry exam confidently with ASAP Institute top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
+        <link rel="canonical" href="https://chemtime.co.in/csir-net-jrf" />
         <meta name="keywords"content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching"/>
       </Helmet>
 

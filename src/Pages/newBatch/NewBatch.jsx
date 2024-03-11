@@ -9,6 +9,8 @@ import WhatsappIcon from '../../components/whatsappIcon/WhatsappIcon'
 import CourseTable from '../../components/courseTable/CourseTable';
 import { Link, useNavigate } from 'react-router-dom';
 import './NewBatch.scss'
+import { Helmet } from "react-helmet";
+
 
 const NewBatch = () => {
 
@@ -292,6 +294,14 @@ const NewBatch = () => {
             <Header2 />
             <Navbar />
 
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ASAP Institute: Contact Us</title>
+                <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+                <link rel="canonical" href="https://chemtime.co.in/contact" />
+                <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+            </Helmet>
+
             {/* <HeroSection
                 imgSrc={bg3}
                 hd1={"TEST SERIES"}
@@ -308,6 +318,7 @@ const NewBatch = () => {
                     <div className="course-idea" >
                         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
                         <h2 className='under-bar'>New Batch</h2> */}
+                        
                         <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online} />
                         <CourseTable mode={'Offline Dashboard'} tableFields={tableFields.offline} />
                         <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} />

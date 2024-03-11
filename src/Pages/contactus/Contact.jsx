@@ -2,7 +2,6 @@ import React, { useRef } from 'react'
 import Navbar from '../../Components/navbar/Navbar'
 import { Header1, Header2 } from '../../components/header/Header'
 import HeroSection from '../../components/heroSection/HeroSection'
-import bg5 from '../../assets/bg5.png'
 import './Contact.scss';
 import Footer from '../../components/footer/Footer'
 import locationIcon from '../../assets/icons/location.png'
@@ -13,6 +12,8 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
+import { Helmet } from "react-helmet";
+
 
 const Contact = () => {
     // const form = useRef();
@@ -103,6 +104,14 @@ const Contact = () => {
             <Header1 />
             <Header2 />
             <Navbar />
+
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>ASAP Institute: New Batch</title>
+                <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+                <link rel="canonical" href="https://chemtime.co.in/new-batch" />
+                <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+            </Helmet>
 
             {/* <HeroSection
                 imgSrc={bg5}

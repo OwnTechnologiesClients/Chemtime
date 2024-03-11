@@ -6,7 +6,6 @@ import imgSrc2 from '../../assets/bg2.jpg'
 import imgSrc3 from '../../assets/batches-banner.jpeg'
 import imgSrc6 from '../../assets/mb-hero-1.jpg'
 import imgSrc7 from '../../assets/mb-hero-2.jpg'
-import imgSrc4 from '../../assets/bg9.jpeg'
 // import imgSrc3 from '../../assets/bg5.png'
 import 'swiper/css'
 import 'swiper/css/pagination';
@@ -45,7 +44,7 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                 className="mySwiper"
                 onClick={toggleAutoplay} // Toggle autoplay on click
                 onMouseLeave={startAutoplay}
-            
+
             >
                 {/* <SwiperSlide>
                     <img src={imgSrc1} className="heroimage" alt="" />
@@ -58,10 +57,10 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     window.innerWidth > 600 ? (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy"/>
+                                <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy"/>
+                                <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy" />
                             </SwiperSlide>
                             {/* <SwiperSlide>
                                 <img src={imgSrc5} className="heroimage" alt="" />
@@ -70,10 +69,10 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     ) : (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc6} className="heroimage" alt="" loading="lazy"/>
+                                <img src={imgSrc6} className="heroimage" alt="" loading="lazy" />
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc7} className="heroimage" alt="" loading="lazy"/>
+                                <img src={imgSrc7} className="heroimage" alt="" loading="lazy" />
                             </SwiperSlide>
                         </>
                     )
