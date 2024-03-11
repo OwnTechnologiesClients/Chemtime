@@ -300,6 +300,17 @@ const NewBatch = () => {
                 <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
                 <link rel="canonical" href="https://chemtime.co.in/contact" />
                 <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow" />
+
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://chemtime.co.in/" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="Chemtime" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="2694" />
+                <meta property="og:image:height" content="1402" />
             </Helmet>
 
             {/* <HeroSection
@@ -318,7 +329,7 @@ const NewBatch = () => {
                     <div className="course-idea" >
                         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ducimus blanditiis assumenda iste aliquid sapiente deleniti soluta in ratione officiis odit deserunt quaerat repellendus quasi aut repudiandae totam accusamus, reprehenderit possimus. Aliquam, dolorem!</p>
                         <h2 className='under-bar'>New Batch</h2> */}
-                        
+
                         <CourseTable mode={'Online Dashboard'} tableFields={tableFields.online} />
                         <CourseTable mode={'Offline Dashboard'} tableFields={tableFields.offline} />
                         <CourseTable mode={'Recorded Dashboard'} tableFields={tableFields.recorded} />

@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -22,20 +22,20 @@ const TopCourseIitJam = () => {
 
   const badges = [
     {
-      linkName:"IIT-JAM ONLINE",
-      link:"/onlinecourses/iit-jam"
+      linkName: "IIT-JAM ONLINE",
+      link: "/onlinecourses/iit-jam"
     },
     {
-      linkName:"IIT-JAM OFFLINE",
-      link:"/offlinecourses/iit-jam"
+      linkName: "IIT-JAM OFFLINE",
+      link: "/offlinecourses/iit-jam"
     },
     {
-      linkName:"IIT-JAM TEST SERIES",
-      link:"/testseries/iit-jam"
+      linkName: "IIT-JAM TEST SERIES",
+      link: "/testseries/iit-jam"
     },
     {
-      linkName:"IIT-JAM STUDY MATERIAL",
-      link:"/studymaterial/iit-jam"
+      linkName: "IIT-JAM STUDY MATERIAL",
+      link: "/studymaterial/iit-jam"
     },
   ]
 
@@ -46,7 +46,19 @@ const TopCourseIitJam = () => {
         <title>Top IIT-JAM Chemistry Coaching in Delhi, India - ASAP Institute</title>
         <meta name="description" content="Discover unparalleled IIT-JAM Chemistry coaching in Delhi at ASAP Institute our expert faculty, comprehensive study materials, and strategic approach empowers students for success in the IIT-JAM Chemistry exam." />
         <link rel="canonical" href="https://chemtime.co.in/iit-jam" />
-        <meta name="keywords"content="IIT-JAM Chemistry Coaching, Best IIT-JAM Chemistry Coaching in Delhi, IIT-JAM Chemistry Classes, Top Coaching Institutes for IIT-JAM Chemistry, Coaching Centers for IIT-JAM Chemistry, IIT-JAM Chemistry Preparation in Delhi."/>
+        <meta name="keywords" content="IIT-JAM Chemistry Coaching, Best IIT-JAM Chemistry Coaching in Delhi, IIT-JAM Chemistry Classes, Top Coaching Institutes for IIT-JAM Chemistry, Coaching Centers for IIT-JAM Chemistry, IIT-JAM Chemistry Preparation in Delhi." />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://chemtime.co.in/" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="Chemtime" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2694" />
+        <meta property="og:image:height" content="1402" />
+
       </Helmet>
 
       <Header1 />
@@ -65,7 +77,7 @@ const TopCourseIitJam = () => {
           <img src={courseImg} alt="" />
 
           <div className="badges">
-            {badges.map((item,index)=>{
+            {badges.map((item, index) => {
               return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
             })}
           </div>

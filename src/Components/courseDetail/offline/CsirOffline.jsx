@@ -31,6 +31,17 @@ const Csir = () => {
                 <meta name="description" content="Excel in CSIR NET Chemical Sciences with our offline coaching. Experienced faculty, comprehensive coverage, and rigorous assessments for success." />
                 <link rel="canonical" href="https://chemtime.co.in/offlinecourses/csir-net" />
                 <meta name="keywords" content="CSIR NET Chemical Sciences coaching Delhi, Offline coaching for CSIR NET Chemical Sciences in Delhi,Best coaching institute for CSIR NET Chemical Sciences,Top CSIR NET Chemical Sciences coaching centers in Delhi, Classroom coaching for CSIR NET Chemical Sciences" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow"/>
+
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://chemtime.co.in/" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="Chemtime" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="2694" />
+                <meta property="og:image:height" content="1402" />
             </Helmet>
 
             {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}

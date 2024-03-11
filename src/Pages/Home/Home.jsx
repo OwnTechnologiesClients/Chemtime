@@ -16,6 +16,8 @@ import Faq from '../../Components/faq/Faq';
 import ChemistryEducationChoices from '../../Components/chemistryEducationChoices/ChemistryEducationChoices';
 import CsirNetPreparation from '../../Components/csirNetPreparation/CsirNetPreparation';
 import IITJamAndGateCoaching from '../../Components/iiTJamAndGateCoaching/IITJamAndGateCoaching';
+import { Helmet } from "react-helmet";
+
 
 const Home = () => {
 
@@ -35,8 +37,8 @@ const Home = () => {
             <WelcomeSection />
 
             <CourseSection />
-            
-            <WelcomeSubSection/>
+
+            <WelcomeSubSection />
 
             <ResultSection />
 
@@ -45,19 +47,14 @@ const Home = () => {
             {/* <VideoSection /> */}
 
             <ChemistryEducationChoices />
-            
+
             <CsirNetPreparation />
-            
+
             <IITJamAndGateCoaching />
-            
-            
 
-            
 
-            
+            <Faq />
 
-            <Faq/>
-            
             <WhatsappIcon />
 
             <Footer />

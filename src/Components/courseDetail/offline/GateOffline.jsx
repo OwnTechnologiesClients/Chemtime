@@ -31,6 +31,17 @@ const GateOffline = () => {
                 <meta name="description" content="Achieve success with ASAP Institute's GATE Chemistry Offline Course. Expert faculty, comprehensive syllabus, and flexible batches. Enroll for a bright future!" />
                 <link rel="canonical" href="https://chemtime.co.in/offlinecourses/gate" />
                 <meta name="keywords" content="GATE Chemistry coaching Delhi, Offline coaching for GATE Chemistry in Delhi, Best coaching institute for GATE Chemistry, Top GATE Chemistry coaching centers in Delhi, Classroom coaching for GATE Chemistry, GATE Chemistry coaching classes Delhi, Coaching for GATE Chemistry offline" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow"/>
+
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://chemtime.co.in/" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="Chemtime" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="2694" />
+                <meta property="og:image:height" content="1402" />
             </Helmet>
             {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 

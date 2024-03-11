@@ -1,5 +1,6 @@
 import React from 'react'
 import courseImage from '../../../assets/iit-jam-online.jpg'
+import ogImage from '../../../assets/ogImage.png'
 import OnlineCourseTable from '../../courseTable/OnlineCourseTable'
 
 import { Helmet } from "react-helmet";
@@ -60,6 +61,17 @@ const JamOnline = () => {
         <meta name="description" content="Join ASAP Institute's IIT-JAM Chemistry Online Batch. Comprehensive syllabus coverage, interactive learning, and flexible options. Enroll today for excellence!" />
         <link rel="canonical" href="https://chemtime.co.in/onlinecourses/iit-jam" />
         <meta name="keywords" content="IIT-JAM Chemistry online coaching Delhi, Best online coaching for IIT-JAM Chemistry in Delhi, Top coaching institutes for IIT-JAM Chemistry in Delhi, Online classes for IIT-JAM Chemistry in Delhi, Online preparation for IIT-JAM Chemistry Delhi." />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://chemtime.co.in/" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="Chemtime" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2694" />
+        <meta property="og:image:height" content="1402" />
       </Helmet>
 
       {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
@@ -76,7 +88,7 @@ const JamOnline = () => {
         <li> • <h6>Flexible Batches:</h6> Tailor your learning experience to your schedule. We offer a 6-month regular batch, a 1-year weekend batch with live online classes, and recorded content options spanning 6 months, 1 year, and 2 years. Each option accommodates your unique learning style and pace.</li>
       </ul>
 
-  
+
 
 
       <IITJamTabs />

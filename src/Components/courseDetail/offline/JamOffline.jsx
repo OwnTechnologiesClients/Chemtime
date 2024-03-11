@@ -39,6 +39,17 @@ const JamOffline = () => {
                 <meta name="description" content="Fuel your success with ASAP Institute's IIT JAM Chemistry program. Expert instructors, comprehensive syllabus coverage, and flexible batches. Enroll now!" />
                 <link rel="canonical" href="https://chemtime.co.in/offlinecourses/iit-jam" />
                 <meta name="keywords" content="IIT JAM Chemistry coaching Delhi, Offline coaching for IIT JAM Chemistry in Delhi, Best coaching institute for IIT JAM Chemistry, Top IIT JAM Chemistry coaching centers in Delhi, Classroom coaching for IIT JAM Chemistry, IIT JAM Chemistry coaching classes Delhi" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow"/>
+
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://chemtime.co.in/" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="Chemtime" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="2694" />
+                <meta property="og:image:height" content="1402" />
             </Helmet>
             {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}
 

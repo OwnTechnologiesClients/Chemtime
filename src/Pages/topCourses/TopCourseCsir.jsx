@@ -48,7 +48,18 @@ const TopCourseCsir = () => {
         <title>CSIR NET JRF Coaching for Chemical Sciences: ASAP Institute</title>
         <meta name="description" content="CSIR NET JRF Chemistry exam confidently with ASAP Institute top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
         <link rel="canonical" href="https://chemtime.co.in/csir-net-jrf" />
-        <meta name="keywords"content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching"/>
+        <meta name="keywords" content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://chemtime.co.in/" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="Chemtime" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2694" />
+        <meta property="og:image:height" content="1402" />
       </Helmet>
 
       <Header1 />

@@ -43,6 +43,17 @@ const CuetOnline = () => {
                 <meta name="description" content="Achieve academic excellence with ASAP Institute's CUET(PG) Chemistry Online Coaching. In-depth syllabus, interactive classes, and flexible scheduling. Enroll now!" />
                 <link rel="canonical" href="https://chemtime.co.in/onlinecourses/cuet" />
                 <meta name="keywords" content="CUET (PG) Chemistry online coaching, Best online coaching for CUET (PG) Chemistry, Top coaching institutes for CUET (PG) Chemistry, Online classes for CUET (PG) Chemistry" />
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+                <meta name="robots" content="index,follow"/>
+
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content="https://chemtime.co.in/" />
+                <meta name="locale" content="en_US" />
+                <meta property="og:site_name" content="Chemtime" />
+                <meta property="og:image" content="/src/assets/ogImage.png" />
+                <meta property="og:image:type" content="image/png" />
+                <meta property="og:image:width" content="2694" />
+                <meta property="og:image:height" content="1402" />
             </Helmet>
 
             {/* <img src={courseImage} alt="" /><br></br><br></br><br></br> */}

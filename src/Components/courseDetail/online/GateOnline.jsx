@@ -53,6 +53,17 @@ const GateOnline = () => {
         <meta name="description" content="Join ASAP Institute's GATE Chemistry Online Batch. Flexibility, interactive learning, and expert faculty. Secure your success in GATE. Enroll today!" />
         <link rel="canonical" href="https://chemtime.co.in/onlinecourses/gate" />
         <meta name="keywords" content="GATE Chemistry Online Course, GATE Chemistry Online Coaching" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://chemtime.co.in/" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="Chemtime" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2694" />
+        <meta property="og:image:height" content="1402" />
 
       </Helmet>
 
@@ -78,8 +89,8 @@ const GateOnline = () => {
 
 
 
-      <GateTabs/>
-      
+      <GateTabs />
+
       <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>

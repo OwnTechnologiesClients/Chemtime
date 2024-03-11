@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./TopCourses.scss";
 import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
@@ -12,33 +12,33 @@ import { Helmet } from "react-helmet";
 
 const TopCourseGate = () => {
   const [activeLink, setActiveLink] = useState('');
-    const [coursesOpened,setCoursesOpened] = useState(false);
-    const handleLinksOpen = () => {
-        setCoursesOpened(!coursesOpened)
-    };
-    const handleLinkClick = (link) => {
+  const [coursesOpened, setCoursesOpened] = useState(false);
+  const handleLinksOpen = () => {
+    setCoursesOpened(!coursesOpened)
+  };
+  const handleLinkClick = (link) => {
 
-        setActiveLink(link);
-    };
+    setActiveLink(link);
+  };
 
-    const badges = [
-      {
-        linkName:"GATE ONLINE",
-        link:"/onlinecourses/gate"
-      },
-      {
-        linkName:"GATE OFFLINE",
-        link:"/offlinecourses/gate"
-      },
-      {
-        linkName:"GATE TEST SERIES",
-        link:"/testseries/gate"
-      },
-      {
-        linkName:"GATE STUDY MATERIAL",
-        link:"/studymaterial/gate"
-      },
-    ]
+  const badges = [
+    {
+      linkName: "GATE ONLINE",
+      link: "/onlinecourses/gate"
+    },
+    {
+      linkName: "GATE OFFLINE",
+      link: "/offlinecourses/gate"
+    },
+    {
+      linkName: "GATE TEST SERIES",
+      link: "/testseries/gate"
+    },
+    {
+      linkName: "GATE STUDY MATERIAL",
+      link: "/studymaterial/gate"
+    },
+  ]
 
   return (
     <div className="top-courses">
@@ -47,7 +47,18 @@ const TopCourseGate = () => {
         <title>Best GATE Chemistry Coaching in Delhi, India - ASAP Institute</title>
         <meta name="description" content="Join the best GATE Chemistry coaching in Delhi at ASAP Institute Expert faculty, comprehensive study material, and personalized guidance for success in GATE Chemistry exam." />
         <link rel="canonical" href="https://chemtime.co.in/gate" />
-        <meta name="keywords"content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry"/>
+        <meta name="keywords" content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://chemtime.co.in/" />
+        <meta name="locale" content="en_US" />
+        <meta property="og:site_name" content="Chemtime" />
+        <meta property="og:image" content="/src/assets/ogImage.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="2694" />
+        <meta property="og:image:height" content="1402" />
       </Helmet>
 
       <Header1 />
@@ -66,7 +77,7 @@ const TopCourseGate = () => {
           <img src={courseImg} alt="" />
 
           <div className="badges">
-            {badges.map((item,index)=>{
+            {badges.map((item, index) => {
               return <Link key={index} className="badge" to={item.link}>{item.linkName} </Link>
             })}
           </div>
