@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 import imgSrc1 from '../../assets/bg1.jpg'
 import imgSrc2 from '../../assets/bg2.jpg'
 import imgSrc3 from '../../assets/batches-banner.jpeg'
@@ -11,6 +12,9 @@ import 'swiper/css'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './Hero.scss'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 
 const HeroSection = ({ imgSrc, hd1, hd2 }) => {
     const [autoplay, setAutoplay] = useState(true);
@@ -57,10 +61,20 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     window.innerWidth > 600 ? (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy" />
+                                <LazyLoadImage
+                                    alt="banner-image-1"
+                                    src={imgSrc1} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                                {/* <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy" /> */}
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy" />
+                                <LazyLoadImage
+                                    alt="banner-image-2"
+                                    src={imgSrc2} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                                {/* <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy" /> */}
                             </SwiperSlide>
                             {/* <SwiperSlide>
                                 <img src={imgSrc5} className="heroimage" alt="" />
@@ -69,10 +83,20 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                     ) : (
                         <>
                             <SwiperSlide>
-                                <img src={imgSrc6} className="heroimage" alt="" loading="lazy" />
+                                <LazyLoadImage
+                                    alt="banner-image-3"
+                                    src={imgSrc6} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                                {/* <img src={imgSrc6} className="heroimage" alt="" loading="lazy" /> */}
                             </SwiperSlide>
                             <SwiperSlide>
-                                <img src={imgSrc7} className="heroimage" alt="" loading="lazy" />
+                                <LazyLoadImage
+                                    alt="banner-image-4"
+                                    src={imgSrc7} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                                {/* <img src={imgSrc7} className="heroimage" alt="" loading="lazy" /> */}
                             </SwiperSlide>
                         </>
                     )

@@ -1,0 +1,59 @@
+.new-batch-pricing-row {
+    display: flex;
+    margin-top: 2vw;
+
+        .notification {
+            width: 50vw;
+            padding: 1vw;
+
+
+            a {
+                display: flex;
+                align-items: center;
+
+                .content {
+                    margin-left: 1vw;
+                    color: #0C48EA;
+                    font-family: Poppins;
+                    text-align: justify;
+
+
+                }
+
+            }
+        }
+
+
+
+        @media screen and (max-width:480px) {
+
+            .notification-panel,
+            .quick-panel {
+                margin: 10vw 2.5vw;
+                width: 89vw;
+                min-height: 31.5vh;
+
+                h2 {
+                    margin: unset;
+                    font-size: 1.2rem;
+                }
+
+                .marquee-container {
+                    height: 45vh;
+                    padding: unset;
+                }
+
+                .quick-link-marquee-container {
+                    height: 54vh;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                li {
+                    padding: 1rem 0;
+                    font-size: .8rem;
+                }
+            }
+        }
+    
+}
