@@ -11,8 +11,8 @@ const SixMonthPrice = () => {
     return (
         <div className='pricing-row'>
             <BronzeSection />
-            {/* <SilverSection />
-            <GoldSection />
+            <SilverSection />
+            {/* <GoldSection />
             <PlatinumSection /> */}
 
         </div>

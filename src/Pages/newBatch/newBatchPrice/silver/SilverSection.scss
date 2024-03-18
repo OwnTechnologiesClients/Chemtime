@@ -1,15 +1,16 @@
 $blue: #2D8EFF;
 
 
-.silver-price-container {
+.new-batch-silver-price-container {
   font-family: "Poppins";
 
   .price-template {
     display: flex;
     flex-direction: column;
     // box-shadow: 0.63rem 0.19rem 0.38rem 0rem rgba(0, 0, 0, 0.16);
-    width: 16vw;
-    margin-right: 0.5vw;
+    width: 26vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
     border-color: #6A6E71;
     border-style: dotted;
     border-width: 2px;
@@ -49,8 +50,9 @@ $blue: #2D8EFF;
       }
 
       .button-data:hover {
-        background-color: $blue;
+        background-color: #2D8EFF;
       }
+
 
       .value {
         display: flex;
@@ -58,6 +60,8 @@ $blue: #2D8EFF;
         gap: 3vw;
         padding: 15px 0px;
         border-bottom: 2px solid #A1A6AA;
+
+
 
         .right-value {
           color: #6A6E71;
@@ -75,12 +79,13 @@ $blue: #2D8EFF;
             content: "";
             position: absolute;
             top: 50%;
-            left: -10px;
+            left: -0.5vw;
             width: 80px;
             height: 2px;
             background-color: black;
             transform: translateY(-50%);
           }
+
         }
       }
 
@@ -103,13 +108,13 @@ $blue: #2D8EFF;
         align-items: center;
         justify-content: space-between;
         border-bottom: 2px dotted#A1A6AA;
-        padding: 5px 0px;
+        padding: 15px 0px;
 
         .img-text {
           display: flex;
           gap: 0.9vw;
           align-items: center;
-          width: 10vw;
+
 
           img {
             height: 0.8vw;
@@ -136,7 +141,7 @@ $blue: #2D8EFF;
         align-items: center;
         justify-content: space-between;
         border-bottom: 2px dotted#A1A6AA;
-        padding: 5px 0px;
+        padding: 10px 0px;
 
         .img-text {
           width: 10vw;
@@ -181,8 +186,7 @@ $blue: #2D8EFF;
 }
 
 @media screen and (max-width: "480px") {
-
-  .silver-price-container {
+  .price-container {
     margin-bottom: 5vw;
     margin-top: 3vw;
 
@@ -251,6 +255,10 @@ $blue: #2D8EFF;
           .pri {
             font-size: 4vw;
           }
+
+
+
+
         }
 
         .tags {
@@ -298,6 +306,7 @@ $blue: #2D8EFF;
             font-size: 4vw;
           }
         }
+
 
         .btns {
           .read-more-btn {

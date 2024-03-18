@@ -13,18 +13,18 @@ const SilverSection = () => {
   };
 
   return (
-    <main className="silver-price-container">
+    <main className="new-batch-silver-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">SILVER 6 Months</h3>
+          <h3 className="text-head">JRF Jumpstart Crash course June-2024</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 6,999</span>
-            <span className="left-value">₹ 23,539</span>
+            <span className="right-value">₹ 499 /-</span>
+            <span className="left-value">₹ 2,499</span>
           </div>
-          
+
           <Link to='https://rzp.io/l/AaA9xczPvf' target="_blank">
             <div className="button-data">
               Enroll Now
@@ -33,48 +33,45 @@ const SilverSection = () => {
 
           <div className="pricing">
             <span className="pri">FEATURES</span>
-            <span className="pri">PRICING</span>
+            {/* <span className="pri">PRICING</span> */}
           </div>
 
           <div className="tags">
             <div className="img-text">
-              <img src={Cross} alt="" />
-              <p style={{ color: "#A1A6AA" }}>Pre Recorded Lectures</p>
-            </div>
-            <p style={{ color: "#A1A6AA" }} className="inr">₹ 6999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
               <img src={Tick} alt="" />
-              <p style={{ color: "#6A6E71" }}>Live Sessions</p>
+              <p>Exclusive Course Feature</p>
             </div>
-            <p style={{ color: "#6A6E71" }}>₹ 9999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Tick} alt="" />
-              <p style={{ color: "#6A6E71" }}>Recording of Live Sessions</p>
-            </div>
-            <p style={{ color: "#6A6E71" }}>₹ 7999</p>
+            {/* <p style={{ color: "#A1A6AA" }} className="inr">₹ 6999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Teacher Handouts</p>
+              <p>Live Interaction and Doubt Clearing</p>
             </div>
-            <p className="inr">₹ 999</p>
+            {/* <p style={{ color: "#6A6E71" }}>₹ 9999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>
-                3000+ Questions <br />
-                Practice Books Soft Copy
-              </p>
+              <p>Comprehensive Coverage of High-Weightage Topics</p>
             </div>
-            <p className="inr">₹ 1999</p>
+            {/* <p style={{ color: "#6A6E71" }}>₹ 7999</p> */}
           </div>
-          <div className="live">
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Assessments</p>
+            </div>
+            {/* <p className="inr">₹ 999</p> */}
+          </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Access to Session Recordings</p>
+            </div>
+            {/* <p className="inr">₹ 1999</p> */}
+          </div>
+          {/* <div className="live">
             <div className="img-text">
               <img src={Cross} alt="" />
               <p>
@@ -107,45 +104,47 @@ const SilverSection = () => {
             </div>
             <p className="inr">₹ 499</p>
           </div>
-          {showAll && (
-            <>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    Previous Year <br />
-                    Questions Tests
-                  </p>
-                </div>
-                <p>₹ 499</p>
-              </div>
-              <div className="tags">
-                <div className="img-text">
-                  <img src={Tick} alt="" />
-                  <p>
-                    Subtopicwise <br />
-                    PYQs Books Soft Copy
-                  </p>
-                </div>
-                <p className="inr">₹ 600</p>
-              </div>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    Subtopicwise <br />
-                    PYQs Books hard Copy
-                  </p>
-                </div>
-                <p>₹ 1100</p>
-              </div>
-              <div className="live">
+          <div className="live">
+            <div className="img-text">
+              <img src={Cross} alt="" />
+              <p>
+                Previous Year <br />
+                Questions Tests
+              </p>
+            </div>
+            <p>₹ 499</p>
+          </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>
+                Subtopicwise <br />
+                PYQs Books Soft Copy
+              </p>
+            </div>
+            <p className="inr">₹ 600</p>
+          </div>
+          <div className="live">
+            <div className="img-text">
+              <img src={Cross} alt="" />
+              <p>
+                Subtopicwise <br />
+                PYQs Books hard Copy
+              </p>
+            </div>
+            <p>₹ 1100</p>
+          </div>
+          <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
                   <p>Theory Booklets</p>
                 </div>
                 <p>₹ 6000</p>
               </div>
+          {showAll && (
+            <>
+
+             
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
@@ -183,7 +182,7 @@ const SilverSection = () => {
             <button className="read-more-btn" onClick={handleReadMoreClick}>
               {showAll ? "Read Less" : "Read More..."}
             </button>
-          </div>
+          </div> */}
         </section>
       </div>
     </main>

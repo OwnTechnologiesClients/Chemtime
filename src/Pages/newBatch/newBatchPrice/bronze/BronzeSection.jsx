@@ -12,16 +12,16 @@ const BronzeSection = () => {
   };
 
   return (
-    <main className="price-container">
+    <main className="new-batch-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">BRONZE 6 Months</h3>
+          <h3 className="text-head">Online Test Series for CSIR NET June-2024</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 4,999</span>
-            <span className="left-value">₹ 12,095</span>
+            <span className="right-value">₹ 99 /-</span>
+            <span className="left-value">₹ 1,500</span>
           </div>
 
           <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
@@ -31,38 +31,38 @@ const BronzeSection = () => {
           </Link>
           <div className="pricing">
             <span className="pri">FEATURES</span>
-            <span className="pri">PRICING</span>
+            {/* <span className="pri">PRICING</span> */}
           </div>
 
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Pre Recorded Lectures</p>
+              <p>Subject-wise Tests</p>
             </div>
-            <p className="inr">₹ 6999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Cross} alt="" />
-              <p>Live Sessions</p>
-            </div>
-            <p>₹ 9999</p>
-          </div>
-          <div className="live">
-            <div className="img-text">
-              <img src={Cross} alt="" />
-              <p>Recording of Live Sessions</p>
-            </div>
-            <p>₹ 7999</p>
+            {/* <p className="inr">₹ 6999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Teacher Handouts</p>
+              <p>Topic-wise Tests</p>
             </div>
-            <p className="inr">₹ 999</p>
+            {/* <p>₹ 9999</p> */}
           </div>
           <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Minor Tests</p>
+            </div>
+            {/* <p>₹ 7999</p> */}
+          </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>Mock Tests</p>
+            </div>
+            {/* <p className="inr">₹ 999</p> */}
+          </div>
+          {/* <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
               <p>
@@ -104,10 +104,8 @@ const BronzeSection = () => {
               <p>Final Mock Test</p>
             </div>
             <p className="inr">₹ 499</p>
-          </div>
-          {showAll && (
-            <>
-              <div className="live">
+          </div> */}
+          {/* <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
                   <p>
@@ -144,6 +142,9 @@ const BronzeSection = () => {
                 </div>
                 <p>₹ 6000</p>
               </div>
+          {showAll && (
+            <>
+             
               <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
@@ -181,7 +182,7 @@ const BronzeSection = () => {
             <button className="read-more-btn" onClick={handleReadMoreClick}>
               {showAll ? "Read Less" : "Read More..."}
             </button>
-          </div>
+          </div> */}
         </section>
       </div>
     </main>
