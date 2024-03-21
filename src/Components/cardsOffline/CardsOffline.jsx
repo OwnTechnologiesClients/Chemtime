@@ -1,12 +1,12 @@
 import React from 'react'
-import './Cards.scss'
+import './CardsOffline.scss'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import queryString from 'query-string';
 import { useDispatch } from 'react-redux';
 import { SetActiveCourse } from '../../redux/userSlice'
 
-const WelcomeCard = ({ imgSrc, title, description }) => {
+const CardsOffline = ({ imgSrc, title, description }) => {
 
     // function extractVideoId(url) {
     //     // Regular expression to match YouTube video ID in various URL formats
@@ -62,7 +62,7 @@ const CourseCard = ({ imgSrc, price, homeCourseHeading, homeCourseDetail, pageNa
     //     navigate(pageNavigate)
     // }
     return (
-        <div className='course-card'>
+        <div className='offline-course-card'>
             {/* <div className="price">
                 ₹{price}
             </div> */}
@@ -85,4 +85,4 @@ const VideoCard = ({ videourl }) => {
     )
 }
 
-export { WelcomeCard, CourseCard, VideoCard }
+export { CardsOffline, CourseCard, VideoCard }

@@ -5,11 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import BronzeSection from '../../newBatchPrice/bronze/BronzeSection'
 import BronzeOneYearSection from '../../newBatchPrice/bronze/oneYear/BronzeOneYearSection'
 import SilverSection from '../../newBatchPrice/silver/SilverSection';
-import GoldSection from '../../newBatchPrice/gold/GoldSection';
-import PlatinumSection from '../../newBatchPrice/platinum/PlatinumSection';
 import SilverOneYearSection from '../../newBatchPrice/silver/oneYear/SilverOneYearSection';
-import GoldOneYearSection from '../../newBatchPrice/gold/oneYear/GoldOneYearSection';
-import PlatinumOneYearSection from '../../newBatchPrice/platinum/oneYear/PlatinumOneYearSection';
 
 const newsAndUpdates = [
     {

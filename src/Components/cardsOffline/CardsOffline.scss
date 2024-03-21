@@ -13,15 +13,12 @@ $text: #646262;
     display: flex;
     justify-content: space-between;
 
-    .course-card {
+    .offline-course-card {
         box-shadow: 0 1vw 1vw rgba($color: #000, $alpha: 0.2);
         position: relative;
-        border-style: dotted;
-        border-color: red;
+        border-style: solid;
         border-color: #000;
         background-color: white;
-
-        border-width: medium;
         width: 19vw;
 
         .price {
@@ -36,8 +33,7 @@ $text: #646262;
 
         img {
             padding: 0.5vw;
-
-            width: 18.6vw;
+            width: 18.7vw;
         }
 
         div {
@@ -73,7 +69,7 @@ $text: #646262;
         .cards {
             flex-direction: column;
 
-            .course-card {
+            .offline-course-card {
                 width: unset;
                 margin: 1rem 0;
 

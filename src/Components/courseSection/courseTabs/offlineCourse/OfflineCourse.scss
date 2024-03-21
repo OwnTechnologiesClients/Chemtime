@@ -1,0 +1,65 @@
+
+
+.course-button {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width: "480px") {
+
+    .offline-courses-container {
+        height: 50vw;
+
+
+        .parent-course-button {
+            width: 100%;
+            background-color: green;
+            height: 50vw;
+        }
+    
+    
+        .course-button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 1.5vw 0;
+            visibility: visible;
+    
+    
+            .course-button {
+                width: 100%;
+                background: #202C45;
+                border-width: medium;
+                border-radius: 1.2vw;
+                padding: 0;
+                color: white;
+                
+                box-shadow: 1vw 1vw 5px #2D8EFF;
+                
+    
+    
+                padding-left: 2vw;
+                padding-right: 2vw;
+                padding-top: 3vw;
+                padding-bottom: 3vw;
+                border-radius: 1.5vw;
+                cursor: pointer;
+    
+    
+            }
+    
+            .course-button.shadow {
+                color: #000;
+            }
+    
+    
+        }
+    
+        .parent-card {
+            visibility: hidden;
+        }
+    }
+
+    
+}

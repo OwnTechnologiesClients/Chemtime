@@ -330,7 +330,7 @@ const NewBatch = () => {
                 </div>
 
                 <div className="marqueess">
-                    <div className='notification-panel'>
+                    {/* <div className='notification-panel'>
 
                         <h2 >NOTICE</h2>
 
@@ -346,7 +346,7 @@ const NewBatch = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className='quick-panel'>
 
