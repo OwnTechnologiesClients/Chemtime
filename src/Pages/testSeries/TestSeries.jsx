@@ -10,6 +10,7 @@ import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import testSeriesData from "./TestSeriesData.json";
 import TestSeriesCourseDetail from "../../components/courseDetail/TestSeriesCourseDetail";
 import { useNavigate, useParams } from "react-router-dom";
+import TestSeriesTabs from "./testSeriesPrice/tabs/TestSeriesTabs";
 const TestSeries = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -110,11 +111,17 @@ const TestSeries = () => {
           />
 
           <div className="course-idea">
-            <h2 className="under-bar">CourseIdea</h2>
-            <TestSeriesTable
+            {/* <h2 className="under-bar">CourseIdea</h2> */}
+            
+            <TestSeriesTabs/>
+
+
+
+
+            {/* <TestSeriesTable
               mode={modeOfTable[activeLink]}
               tableFields={tableFields[activeLink]}
-            />
+            /> */}
             <p>
               Note: 18% GST is applicable extra on above fees as per govt.
               norms.

@@ -71,10 +71,10 @@ const CourseLinks = ({
     ],
     [
       "CSIR-NET Chemical Sciences",
-      "GATE Chemistry",
-      "IIT-JAM Chemistry",
-      "BARC (Chemistry)",
-      "TIFR (Chemistry)",
+      // "GATE Chemistry",
+      // "IIT-JAM Chemistry",
+      // "BARC (Chemistry)",
+      // "TIFR (Chemistry)",
     ],
   ];
 
