@@ -72,11 +72,11 @@ const OnlineCourse = () => {
       <Header2 />
       <Navbar />
 
-      <CourseHeroSection
+      {/* <CourseHeroSection
         imgSrc={onlineCoursesBannerImg}
         hd1={"ONLINE COURSES"}
         hd2={"FOR YOUR BETTER FUTURE"}
-      />
+      /> */}
 
       <div className="course-page-section">
         <CourseLinks

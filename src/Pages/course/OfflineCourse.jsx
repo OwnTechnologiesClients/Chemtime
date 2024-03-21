@@ -64,11 +64,11 @@ const OfflineCourse = () => {
       <Header2 />
       <Navbar />
 
-      <CourseHeroSection
+      {/* <CourseHeroSection
         imgSrc={offlineCoursesBannerImg}
         hd1={"OFFLINE COURSES"}
         hd2={"FOR YOUR BETTER FUTURE"}
-      />
+      /> */}
 
       <div className="course-page-section">
         {console.log(activeLink)}

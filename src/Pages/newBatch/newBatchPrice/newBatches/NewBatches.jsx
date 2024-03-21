@@ -1,11 +1,6 @@
 import React from 'react'
-import "./OneYearPrice.scss";
+import "./NewBatches.scss";
 import { Link, useNavigate } from 'react-router-dom';
-
-import BronzeSection from '../../newBatchPrice/bronze/BronzeSection'
-import BronzeOneYearSection from '../../newBatchPrice/bronze/oneYear/BronzeOneYearSection'
-import SilverSection from '../../newBatchPrice/silver/SilverSection';
-import SilverOneYearSection from '../../newBatchPrice/silver/oneYear/SilverOneYearSection';
 
 const newsAndUpdates = [
     {
@@ -44,7 +39,7 @@ const newsAndUpdates = [
 
 ]
 
-const OneYearPrice = () => {
+const NewBatches = () => {
     return (
 
 
@@ -73,4 +68,4 @@ const OneYearPrice = () => {
     )
 }
 
-export default OneYearPrice
+export default NewBatches

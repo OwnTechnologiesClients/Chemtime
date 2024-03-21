@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./BronzeSection.scss";
-import Tick from "../../../../assets/icons/tick.png";
-import Cross from "../../../../assets/icons/cross.png";
+import "../jRFJumpstart/JRFJumpstart.scss";
+import Tick from "../../../../assets/icons/silver-tick.png";
+import Cross from "../../../../assets/icons/silver-cross.png";
 import { Link } from 'react-router-dom';
 
-const BronzeSection = () => {
+
+const JRFJumpstart = () => {
   const [showAll, setShowAll] = useState(false);
 
   const handleReadMoreClick = () => {
@@ -12,23 +13,24 @@ const BronzeSection = () => {
   };
 
   return (
-    <main className="new-batch-price-container">
+    <main className="new-batch-silver-price-container">
       <div className="price-template">
         <section className="head-section">
-          <h3 className="text-head">Online Test Series for CSIR NET June-2024</h3>
+          <h3 className="text-head">JRF Jumpstart Crash course June-2024</h3>
         </section>
 
         <section className="col-section">
           <div className="value">
-            <span className="right-value">₹ 99 /-</span>
-            <span className="left-value">₹ 1,500</span>
+            <span className="right-value">₹ 499 /-</span>
+            <span className="left-value">₹ 2,499</span>
           </div>
 
-          <Link to='https://rzp.io/l/kT4g9Ed' target="_blank">
+          <Link to='https://rzp.io/l/z5SKvQd' target="_blank">
             <div className="button-data">
               Enroll Now
             </div>
           </Link>
+
           <div className="pricing">
             <span className="pri">FEATURES</span>
             {/* <span className="pri">PRICING</span> */}
@@ -37,42 +39,39 @@ const BronzeSection = () => {
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Subject-wise Tests</p>
+              <p>Exclusive Course Feature</p>
             </div>
-            {/* <p className="inr">₹ 6999</p> */}
+            {/* <p style={{ color: "#A1A6AA" }} className="inr">₹ 6999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Topic-wise Tests</p>
+              <p>Live Interaction and Doubt Clearing</p>
             </div>
-            {/* <p>₹ 9999</p> */}
+            {/* <p style={{ color: "#6A6E71" }}>₹ 9999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Minor Tests</p>
+              <p>Comprehensive Coverage of High-Weightage Topics</p>
             </div>
-            {/* <p>₹ 7999</p> */}
+            {/* <p style={{ color: "#6A6E71" }}>₹ 7999</p> */}
           </div>
           <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>Mock Tests</p>
+              <p>Assessments</p>
             </div>
             {/* <p className="inr">₹ 999</p> */}
           </div>
-          {/* <div className="tags">
+          <div className="tags">
             <div className="img-text">
               <img src={Tick} alt="" />
-              <p>
-                3000+ Questions <br />
-                Practice Books Soft Copy
-              </p>
+              <p>Access to Session Recordings</p>
             </div>
-            <p className="inr">₹ 1999</p>
+            {/* <p className="inr">₹ 1999</p> */}
           </div>
-          <div className="live">
+          {/* <div className="live">
             <div className="img-text">
               <img src={Cross} alt="" />
               <p>
@@ -104,38 +103,38 @@ const BronzeSection = () => {
               <p>Final Mock Test</p>
             </div>
             <p className="inr">₹ 499</p>
-          </div> */}
-          {/* <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    Previous Year <br />
-                    Questions Tests
-                  </p>
-                </div>
-                <p>₹ 499</p>
-              </div>
-              <div className="tags">
-                <div className="img-text">
-                  <img src={Tick} alt="" />
-                  <p>
-                    Subtopicwise <br />
-                    PYQs Books Soft Copy
-                  </p>
-                </div>
-                <p className="inr">₹ 600</p>
-              </div>
-              <div className="live">
-                <div className="img-text">
-                  <img src={Cross} alt="" />
-                  <p>
-                    Subtopicwise <br />
-                    PYQs Books hard Copy
-                  </p>
-                </div>
-                <p>₹ 1100</p>
-              </div>
-              <div className="live">
+          </div>
+          <div className="live">
+            <div className="img-text">
+              <img src={Cross} alt="" />
+              <p>
+                Previous Year <br />
+                Questions Tests
+              </p>
+            </div>
+            <p>₹ 499</p>
+          </div>
+          <div className="tags">
+            <div className="img-text">
+              <img src={Tick} alt="" />
+              <p>
+                Subtopicwise <br />
+                PYQs Books Soft Copy
+              </p>
+            </div>
+            <p className="inr">₹ 600</p>
+          </div>
+          <div className="live">
+            <div className="img-text">
+              <img src={Cross} alt="" />
+              <p>
+                Subtopicwise <br />
+                PYQs Books hard Copy
+              </p>
+            </div>
+            <p>₹ 1100</p>
+          </div>
+          <div className="live">
                 <div className="img-text">
                   <img src={Cross} alt="" />
                   <p>Theory Booklets</p>
@@ -144,6 +143,7 @@ const BronzeSection = () => {
               </div>
           {showAll && (
             <>
+
              
               <div className="live">
                 <div className="img-text">
@@ -189,4 +189,4 @@ const BronzeSection = () => {
   );
 };
 
-export default BronzeSection;
+export default JRFJumpstart;

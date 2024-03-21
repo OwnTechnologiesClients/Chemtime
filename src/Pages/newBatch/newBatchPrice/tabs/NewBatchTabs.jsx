@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import OneYearPrice from "../../newBatchPrice/oneYearPrice/OneYearPrice";
-import SixMonthPrice from "../../newBatchPrice/sixMonthPrice/SixMonthPrice";
+import CrashCourse from "../crashCourse/CrashCourse";
 import "./NewBatchTabs.scss";
+import NewBatches from "../newBatches/NewBatches";
 
 
 const NewBatchTabs = () => {
@@ -11,14 +11,14 @@ const NewBatchTabs = () => {
         {
             id: 1,
             tabTitle: 'Crash Course',
-            title: <SixMonthPrice/>,
+            title: <CrashCourse />,
         },
         {
             id: 2,
             tabTitle: 'New Batches',
-            title: <OneYearPrice/>,
+            title: <NewBatches />,
         },
-        
+
 
 
     ]
