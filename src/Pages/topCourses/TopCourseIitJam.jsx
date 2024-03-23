@@ -5,7 +5,7 @@ import Navbar from "../../Components/navbar/Navbar";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
-import courseImg from "../../assets/bg3.png";
+// import courseImg from "../../assets/bg3.png";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -74,7 +74,7 @@ const TopCourseIitJam = () => {
           handleLinksOpen={handleLinksOpen}
         />
         <div className="top-courses-container">
-          <img src={courseImg} alt="" />
+          {/* <img src={courseImg} alt="" /> */}
 
           <div className="badges">
             {badges.map((item, index) => {

@@ -108,7 +108,7 @@ const RegistrationSection = () => {
           type="email"
           name="email"
           id="email"
-          placeholder="Enter Email"
+          placeholder="Enter Name"
         />
         <select ref={course} name="course" id="course">
           <option value="" disabled selected>

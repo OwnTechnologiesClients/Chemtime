@@ -30,6 +30,7 @@ import ShippingPolicy from "./Pages/shippingPolicy/ShippingPolicy";
 import TopCourseIitJam from "./pages/topCourses/TopCourseIitJam";
 import TopCourseCsir from "./pages/topCourses/TopCourseCsir";
 import TopCourseGate from "./pages/topCourses/TopCourseGate";
+import TestUpload from "./Pages/form/TestUpload";
 // import Scholarship from "./pages/scholarship/Scholarship";
 // import Price from "./Components/price/Price";
 // import Tabs from "./Components/tabs/Tabs";
@@ -61,6 +62,7 @@ function App() {
             <Route path="/student-login" element={<Login />} />
             <Route path="/student-signup" element={<StudentSignup />} />
             <Route path="/history" element={<History />} />
+            <Route path="/testupload" element={<TestUpload />} />
             {/* <Route path="/searchuser" element={<SearchUser />} /> */}
 
             <Route path="/form-print" element={<FormPrint />} />

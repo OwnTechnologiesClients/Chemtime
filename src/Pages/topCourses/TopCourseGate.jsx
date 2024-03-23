@@ -4,7 +4,7 @@ import { Header1, Header2 } from "../../components/header/Header";
 import Navbar from "../../Components/navbar/Navbar";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import Footer from "../../Components/footer/Footer";
-import courseImg from "../../assets/bg3.png";
+// import courseImg from "../../assets/bg3.png";
 import CourseLinks from "../../components/courseLinks/CourseLinks";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -74,7 +74,7 @@ const TopCourseGate = () => {
           handleLinksOpen={handleLinksOpen}
         />
         <div className="top-courses-container">
-          <img src={courseImg} alt="" />
+          {/* <img src={courseImg} alt="" /> */}
 
           <div className="badges">
             {badges.map((item, index) => {

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Form.scss";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import logo from "../../assets/logo.png";
 import WhatsappIcon from "../../components/whatsappIcon/WhatsappIcon";
 import { ToastContainer, toast } from "react-toastify";
@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import useRazorpay from "react-razorpay";
 import axios from "axios";
 import { useSelector } from "react-redux";
+import uploadImg from "../../assets/photo.png";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
 function Form() {
@@ -16,6 +17,37 @@ function Form() {
   const location = useLocation();
   const currentUser = location?.state?.currentUser || "";
   const isPayment = location?.state?.isPayment || false;
+
+  const inputRef = useRef(null)
+  const [image, setImage] = useState("")
+  const [file, setFile] = useState()
+  var uploadFileName = ""
+
+  const upload = () => {
+
+
+    const formData = new FormData()
+    formData.append('studentProfile', file)
+
+    axios.post('http://localhost:9000/api/student/upload', formData)
+      .then(res => { })
+      .catch(er => console.log(er))
+
+    uploadFileName = file.name
+    setisFormSaved(true);
+
+  }
+
+  const handleImageClick = () => {
+    inputRef.current.click();
+  }
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    console.log(file);
+    //setImage(event.target.files[0])
+    setFile(event.target.files[0])
+  }
 
   //   console.log(location.state.currentUser);
 
@@ -71,6 +103,7 @@ function Form() {
     address,
     fathername,
     filename,
+
   } = currentUser;
 
   const openParenthesisIndex = coursename?.indexOf("(");
@@ -104,13 +137,15 @@ function Form() {
 
   var DateFormSubmitted = "";
   var d = new Date();
+
   DateFormSubmitted +=
     d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
 
   const [formData, setFormData] = useState({
     registrationnumber: regNo,
+    studentProfile: uploadFileName,
     courseduration: courseduration,
-    session: "2023-24",
+    session: "2024-25",
     coursetype: coursetype || "",
     coursename: coursename,
     subject: subjectname,
@@ -156,6 +191,8 @@ function Form() {
 
   const [Razorpay] = useRazorpay();
 
+
+
   const handleChange = (event) => {
     event.preventDefault();
     const { name, value } = event.target;
@@ -168,17 +205,23 @@ function Form() {
   };
 
   const handleSubmit = async (e) => {
+
     e.preventDefault();
+
     try {
       const response = await axios({
+
         method: "post",
-        url: "https://chemtime-backend-0duz.onrender.com/api/student/registration-form",
+        url: "http://localhost:9000/api/student/registration-form",
 
         data: formData,
         headers: {
           authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
+
+      console.log("---<<<<<>>>>");
+
 
       if (response.data.success) {
         setisFormSaved(true);
@@ -192,6 +235,7 @@ function Form() {
           progress: undefined,
         });
       } else {
+        console.log("----->>>>>  ", response.data);
         toast.warn("Please enter all details", {
           position: "bottom-right",
           autoClose: 2000,
@@ -321,7 +365,8 @@ function Form() {
         if (res.data.success) {
           const result = await axios({
             method: "post",
-            url: "https://chemtime-backend-0duz.onrender.com/api/student/get-registration-form",
+            //url: "https://chemtime-backend-0duz.onrender.com/api/student/get-registration-form",
+            url: "http://localhost:9000/api/student/get-registration-form",
             data: {
               registrationNo: regNo,
               contact: contactnumber,
@@ -370,30 +415,30 @@ function Form() {
     });
   };
 
-  useEffect(() => {
-    console.log(isPayment);
-    console.log(!localStorage.getItem("pData"));
-    if (!isPayment && currentUser === "") {
-      navigate("/");
-    }
-    if (isPayment && localStorage.getItem("pData")) {
-      let storedDataString = localStorage.getItem("pData");
-      let storedData = JSON.parse(storedDataString);
+  // useEffect(() => {
+  //   console.log(isPayment);
+  //   console.log(!localStorage.getItem("pData"));
+  //   if (!isPayment && currentUser === "") {
+  //     navigate("/");
+  //   }
+  //   if (isPayment && localStorage.getItem("pData")) {
+  //     let storedDataString = localStorage.getItem("pData");
+  //     let storedData = JSON.parse(storedDataString);
 
-      let storedFromData = localStorage.getItem("pFromData");
-      let formStoredData = JSON.parse(storedFromData);
+  //     let storedFromData = localStorage.getItem("pFromData");
+  //     let formStoredData = JSON.parse(storedFromData);
 
-      setFormData((prevData) => ({
-        ...prevData,
-        ...formStoredData,
-      }));
+  //     setFormData((prevData) => ({
+  //       ...prevData,
+  //       ...formStoredData,
+  //     }));
 
-      finalCall(storedData);
-    }
-    if (isPayment && !localStorage.getItem("pData")) {
-      navigate("/history");
-    }
-  }, []);
+  //     finalCall(storedData);
+  //   }
+  //   if (isPayment && !localStorage.getItem("pData")) {
+  //     navigate("/history");
+  //   }
+  // }, []);
 
   return (
     <form className="form-pay">
@@ -423,10 +468,35 @@ function Form() {
               value={formData?.registrationnumber}
             />
           </div>
-          <div className="form-profilepic">
-            <img src={`https://chemtime-backend-0duz.onrender.com/public/${filename}`} />
+
+
+          <div className="form-profilepic" onClick={handleImageClick}>
+            {
+              file ? <img src={URL.createObjectURL(file)} alt="" /> : <img src={uploadImg} alt="" />
+            }
+
+            <input
+              type='file'
+              ref={inputRef}
+              onChange={handleImageChange}
+              style={{ display: "none" }}
+            />
+
+            {/* <button type='button' onClick={upload}> Uploadd </button> */}
+
+            {/* <img src={`https://chemtime-backend-0duz.onrender.com/public/${filename}`} /> */}
           </div>
+
+
         </div>
+
+
+        {/* <input type='file' onChange={(e) => {
+          setFile(e.target.files[0])
+        }
+        } />
+
+        <button type='button' onClick={upload}> Uploadd </button> */}
       </div>
 
       <div className="sf-course-section">
@@ -440,8 +510,9 @@ function Form() {
               name="courseduration"
               type="radio"
               value="6 Month"
-              checked={formData?.courseduration === "6 Months"}
-              readOnly
+              checked={formData?.courseduration === "6 Month"}
+              onChange={handleChange}
+
             />
           </label>
 
@@ -452,7 +523,9 @@ function Form() {
               type="radio"
               value="1 Year"
               checked={formData?.courseduration === "1 Year"}
-              readOnly
+              onChange={handleChange}
+
+
             />
           </label>
 
@@ -463,7 +536,9 @@ function Form() {
               type="radio"
               value="2 Years"
               checked={formData?.courseduration === "2 Years"}
-              readOnly
+              onChange={handleChange}
+
+
             />
           </label>
         </div>
@@ -577,7 +652,12 @@ function Form() {
         <div className="sf-student-name">
           <p>Name: </p>
 
-          <input type="text" name="studentname" value={formData?.studentname} />
+          <input
+            type="text"
+            name="studentname"
+            value={formData?.studentname}
+            onChange={handleChange} />
+
         </div>
       </div>
 
@@ -586,7 +666,7 @@ function Form() {
         <div className="sf-date-of-birth">
           <p>Date Of Birth (DD/MM/YY): </p>
 
-          <input type="date" name="dateofbirth" value={formData?.dateofbirth} />
+          <input type="date" name="dateofbirth" value={formData?.dateofbirth} onChange={handleChange} />
         </div>
 
         <div className="sf-date-of-birth">
@@ -633,7 +713,7 @@ function Form() {
         <div className="sf-father-name">
           <p>Father Name: </p>
 
-          <input type="text" name="fathername" value={formData?.fathername} />
+          <input type="text" name="fathername" value={formData?.fathername} onChange={handleChange} />
         </div>
       </div>
 
@@ -667,7 +747,7 @@ function Form() {
         <div className="sf-father-name">
           <p>Address: </p>
 
-          <input type="text" name="address" value={formData?.address} />
+          <input type="text" name="address" value={formData?.address} onChange={handleChange} />
         </div>
       </div>
 
@@ -676,13 +756,13 @@ function Form() {
         <div className="sf-date-of-birth">
           <p>State: </p>
 
-          <input type="text" name="state" value={formData?.state} />
+          <input type="text" name="state" value={formData?.state} onChange={handleChange} />
         </div>
 
         <div className="sf-date-of-birth">
           <p>Pin: </p>
 
-          <input type="text" name="pincode" value={formData?.pincode} />
+          <input type="text" name="pincode" value={formData?.pincode} onChange={handleChange} />
         </div>
 
         <div className="sf-date-of-birth">
@@ -706,13 +786,14 @@ function Form() {
             type="text"
             name="mobilenumber"
             value={formData?.mobilenumber}
+            onChange={handleChange}
           />
         </div>
 
         <div className="sf-name-of-subject">
           <p>Email: </p>
 
-          <input type="text" name="email" value={formData?.email} />
+          <input type="text" name="email" value={formData?.email} onChange={handleChange} />
         </div>
       </div>
 
@@ -720,7 +801,7 @@ function Form() {
         <div className="sf-name-of-examination">
           <p>Amount: </p>
 
-          <input type="text" name="price" value={formData?.price} />
+          <input type="text" name="price" value={formData?.price} onChange={handleChange} />
         </div>
       </div>
 
@@ -1055,7 +1136,7 @@ function Form() {
         <div className="sf-name-of-subject">
           <p>Place</p>
 
-          <input type="text" name="place" value={formData?.place} />
+          <input type="text" name="place" value={formData?.place} onChange={handleChange} />
         </div>
       </div>
 
@@ -1063,19 +1144,22 @@ function Form() {
         <div className="sf-paynow">
           <button
             className={`button ${!isFormSaved ? "disabled-btn" : ""}`}
-            onClick={handlePrint}
+            onClick={(
+              handlePrint
+            )}
           >
             Print As PDF
           </button>
-          <button className="button" onClick={handleSubmit}>
-            Save
+          <button type='button' onClick={upload}> Save </button>
+          <button className={`button ${!isFormSaved ? "disabled-btn" : ""}`} onClick={handleSubmit}>
+            Submit
           </button>
-          <button
+          {/* <button
             className={`button ${!isFormSaved ? "disabled-btn" : ""}`}
-            onClick={handlePayment}
+            onClick={handleSubmit}
           >
-            Pay Now
-          </button>
+            Submit
+          </button> */}
         </div>
       ) : (
         <div>

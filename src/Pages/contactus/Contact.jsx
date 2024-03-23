@@ -112,7 +112,7 @@ const Contact = () => {
                 <link rel="canonical" href="https://chemtime.co.in/new-batch" />
                 <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-                <meta name="robots" content="index,follow"/>
+                <meta name="robots" content="index,follow" />
 
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://chemtime.co.in/" />
@@ -131,6 +131,19 @@ const Contact = () => {
             /> */}
 
             <div className="contact-page-section">
+                <div className="contact-form">
+                    <h2 className='under-bar'>Interested in discussing?</h2>
+                    <p>Have questions or need assistance? Contact us today. We're here to help and eager to hear from you. Your feedback and inquiries are valuable to us. We look forward to connecting with you!</p>
+
+                    <form className="form-fields" ref={formRef} onSubmit={handleSubmit} >
+                        <input name='name' placeholder='Enter Name' required />
+                        <input type="email" name="email" id="email" placeholder='Enter Email' required />
+                        <input type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' required />
+                        <textarea name="message" rows="10" placeholder='Enter Message' required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <ToastContainer closeButton={false} />
+                </div>
                 <div className="contact-cards">
                     <div className="card">
                         <img src={locationIcon} alt="" />
@@ -154,19 +167,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className="contact-form">
-                    <h2 className='under-bar'>Interested in discussing?</h2>
-                    <p>Have questions or need assistance? Contact us today. We're here to help and eager to hear from you. Your feedback and inquiries are valuable to us. We look forward to connecting with you!</p>
 
-                    <form className="form-fields" ref={formRef} onSubmit={handleSubmit} >
-                        <input name='name' placeholder='Enter Name' required />
-                        <input type="email" name="email" id="email" placeholder='Enter Email' required />
-                        <input type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' required />
-                        <textarea name="message" rows="10" placeholder='Enter Message' required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                    <ToastContainer closeButton={false} />
-                </div>
             </div>
 
             <div className="google-map-location">

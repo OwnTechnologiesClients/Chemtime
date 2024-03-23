@@ -85,11 +85,10 @@ const Navbar = () => {
           onClick={() => handleItemClick("Courses")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "onlinecourses" || activeItem === "offlinecourses"
-                ? "active"
-                : ""
-            }`}
+            className={`menu-item ${activeItem === "onlinecourses" || activeItem === "offlinecourses"
+              ? "active"
+              : ""
+              }`}
           >
             Courses <img src={darrow} alt="" />
             <div className="dropdown">
@@ -112,9 +111,8 @@ const Navbar = () => {
           onClick={() => handleItemClick("testseries")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "testseries" ? "active" : ""
-            }`}
+            className={`menu-item ${activeItem === "testseries" ? "active" : ""
+              }`}
           >
             Test Series
           </div>
@@ -125,21 +123,20 @@ const Navbar = () => {
           onClick={() => handleItemClick("studymaterial")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "studymaterial" ? "active" : ""
-            }`}
+            className={`menu-item ${activeItem === "studymaterial" ? "active" : ""
+              }`}
           >
             Study Material
           </div>
         </Link>
 
-        <Link to="/videos" onClick={() => handleItemClick("videos")}>
+        {/* <Link to="/videos" onClick={() => handleItemClick("videos")}>
           <div
             className={`menu-item ${activeItem === "videos" ? "active" : ""}`}
           >
             Videos
           </div>
-        </Link>
+        </Link> */}
 
         <Link
           className="courses top-course-nav"
@@ -147,13 +144,12 @@ const Navbar = () => {
           onClick={() => handleItemClick("iit-jam")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "iit-jam" ||
+            className={`menu-item ${activeItem === "iit-jam" ||
               activeItem === "gate" ||
               activeItem === "csir-net-jrf"
-                ? "active"
-                : ""
-            }`}
+              ? "active"
+              : ""
+              }`}
           >
             Top Courses <img src={darrow} alt="" />
             <div className="dropdown">
@@ -203,15 +199,13 @@ const Navbar = () => {
         </Link>
 
         <Link
-          to={`${
-            localStorage.getItem("token") ? "/history" : "/student-login"
-          }`}
+          to={`${localStorage.getItem("token") ? "/history" : "/student-login"
+            }`}
           onClick={() => handleItemClick("Student Login")}
         >
           <div
-            className={`menu-item ${
-              activeItem === "student-login" ? "active" : ""
-            }`}
+            className={`menu-item ${activeItem === "student-login" ? "active" : ""
+              }`}
           >
             Student Login
           </div>
@@ -224,7 +218,7 @@ const Navbar = () => {
             Blog
           </div>
         </Link>
-        <Link to="/new-batch">
+        <Link to="/form">
           <div className="new-batch">NEW BATCH</div>
         </Link>
       </div>

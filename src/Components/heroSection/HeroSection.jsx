@@ -4,9 +4,14 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import imgSrc1 from '../../assets/bg1.jpg'
 import imgSrc2 from '../../assets/bg2.jpg'
-import imgSrc3 from '../../assets/batches-banner.jpeg'
-import imgSrc6 from '../../assets/mb-hero-1.jpg'
-import imgSrc7 from '../../assets/mb-hero-2.jpg'
+import imgSrc3 from '../../assets/bg3.jpg'
+import imgSrc4 from '../../assets/bg4.jpg'
+// import imgSrc3 from '../../assets/bg3.jpeg'
+// import imgSrc3 from '../../assets/batches-banner.jpeg'
+import mb1 from '../../assets/mb-hero-1.jpg'
+import mb2 from '../../assets/mb-hero-2.jpg'
+import mb3 from '../../assets/mb-hero-3.jpg'
+import mb4 from '../../assets/mb-hero-4.jpg'
 // import imgSrc3 from '../../assets/bg5.png'
 import 'swiper/css'
 import 'swiper/css/pagination';
@@ -65,8 +70,9 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                                     alt="banner-image-1"
                                     src={imgSrc1} // use normal <img> attributes as props
                                     effect="blur"
+                                    width="100%"
+                                    
                                 />
-                                {/* <img src={imgSrc1} className="heroimage" alt="banner-image" loading="lazy" /> */}
                             </SwiperSlide>
                             <SwiperSlide>
                                 <LazyLoadImage
@@ -74,7 +80,20 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                                     src={imgSrc2} // use normal <img> attributes as props
                                     effect="blur"
                                 />
-                                {/* <img src={imgSrc2} className="heroimage" alt="banner-image" loading="lazy" /> */}
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <LazyLoadImage
+                                    alt="banner-image-2"
+                                    src={imgSrc3} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <LazyLoadImage
+                                    alt="banner-image-2"
+                                    src={imgSrc4} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
                             </SwiperSlide>
                             {/* <SwiperSlide>
                                 <img src={imgSrc5} className="heroimage" alt="" />
@@ -84,19 +103,31 @@ const HeroSection = ({ imgSrc, hd1, hd2 }) => {
                         <>
                             <SwiperSlide>
                                 <LazyLoadImage
-                                    alt="banner-image-3"
-                                    src={imgSrc6} // use normal <img> attributes as props
+                                    alt="banner-image-1"
+                                    src={mb1} // use normal <img> attributes as props
                                     effect="blur"
                                 />
-                                {/* <img src={imgSrc6} className="heroimage" alt="" loading="lazy" /> */}
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <LazyLoadImage
+                                    alt="banner-image-2"
+                                    src={mb2} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <LazyLoadImage
+                                    alt="banner-image-3"
+                                    src={mb3} // use normal <img> attributes as props
+                                    effect="blur"
+                                />
                             </SwiperSlide>
                             <SwiperSlide>
                                 <LazyLoadImage
                                     alt="banner-image-4"
-                                    src={imgSrc7} // use normal <img> attributes as props
+                                    src={mb4} // use normal <img> attributes as props
                                     effect="blur"
                                 />
-                                {/* <img src={imgSrc7} className="heroimage" alt="" loading="lazy" /> */}
                             </SwiperSlide>
                         </>
                     )
