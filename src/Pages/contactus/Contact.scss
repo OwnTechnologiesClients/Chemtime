@@ -112,6 +112,15 @@ $theme-color: #202C45;
             height: 2.3vw;
             font-size: 1vw;
         }
+
+        select {
+            font-size: 1vw;
+            padding: .7vw 1.7vw;
+            width: 100%;
+            height: 3vw;
+            background-color: $light-bg;
+            border-color: $light-bg;
+        }
     }
 
     @media screen and (max-width:480px) {
@@ -195,9 +204,21 @@ $theme-color: #202C45;
                 margin-top: 2vw;
 
             }
+
+
+            select {
+                font-size: unset;
+                padding: .7vw 1vw;
+                width: unset;
+                height: 2.7rem;
+                margin: 2vw 0;
+            }
         }
 
+
     }
+
+
 
 
 }

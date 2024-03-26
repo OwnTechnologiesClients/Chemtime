@@ -11,6 +11,8 @@ import testSeriesData from "./TestSeriesData.json";
 import TestSeriesCourseDetail from "../../components/courseDetail/TestSeriesCourseDetail";
 import { useNavigate, useParams } from "react-router-dom";
 import TestSeriesTabs from "./testSeriesPrice/tabs/TestSeriesTabs";
+
+
 const TestSeries = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -96,7 +98,7 @@ const TestSeries = () => {
                 hd1={"TEST SERIES"}
                 hd2={"FOR YOUR BETTER FUTURE"}
             /> */}
-      <div className="test-series-section"> 
+      <div className="test-series-section">
         <CourseLinks
           activeLink={activeUrl}
           coursesOpened={coursesOpened}
@@ -112,8 +114,8 @@ const TestSeries = () => {
 
           <div className="course-idea">
             {/* <h2 className="under-bar">CourseIdea</h2> */}
-            
-            <TestSeriesTabs/>
+
+            <TestSeriesTabs />
 
 
 
@@ -128,6 +130,42 @@ const TestSeries = () => {
             </p>{" "}
             <br></br>
             <br></br>
+
+
+
+            <h3>Registration Procedure:</h3>
+            <p>To enroll in our CSIR NET Chemical Sciences offline course, you can follow these simple steps:</p>
+            <ul>
+              <li> • <strong>Online Registration:</strong> Click on the "Enroll Now" link provided on our website to register online.</li>
+              <li> • <strong>In-Person Registration:</strong> You may also visit the ASAP Institute office in Jia Sarai, Delhi. Fill out a detailed application form and submit it along with two passport-size photographs and a self-attested copy of your identity proof (Aadhar Card or Voter ID Card).</li>
+              <li> • <strong>Fee Payment:</strong> Deposit the course fee in any branch of HDFC Bank from anywhere in India by cash deposit or net banking in favor of " <h5>ASAP CHEM TIME PVT. LTD.</h5> " in the account number: <h5>50200066588261</h5> Use NEFT/IFSC: <h5>HDFC0000032</h5> and the branch is located in <h5>SDA, New Delhi.</h5></li>
+            </ul>
+
+            <p>Join ASAP Institute's CSIR NET Chemical Sciences offline course to embark on your journey to success in the field of chemical sciences.</p>
+
+
+            <h3>Contact Information:</h3>
+            <div className="phone-number">
+              <ul>
+                <li> • <strong>Phone:</strong> <strong>8595764714, 7011767872, 9026800325</strong></li>
+              </ul>
+            </div>
+
+            <h2>Frequently Asked Questions (FAQs):</h2>
+            <ol>
+              <li>
+                <strong>1. Where can I find the CSIR UGC NET Test Series?</strong>
+                <p>The candidates can find the CSIR NET Test Series on chemtime Website</p>
+              </li>
+              <li>
+                <strong>2. What are the tests included in the CSIR NET test series?</strong>
+                <p>Subject-wise tests, Full-length tests, and previous year papers are included in the CSIR NET test series.</p>
+              </li>
+              <li>
+                <strong>3. Do ASAP institute also provide solutions for the questions?</strong>
+                <p>Yes, detailed solutions will be available to you after you finish the test. You will be able to access these solutions anytime after you have taken the test.</p>
+              </li>
+            </ol>
           </div>
         </div>
       </div>

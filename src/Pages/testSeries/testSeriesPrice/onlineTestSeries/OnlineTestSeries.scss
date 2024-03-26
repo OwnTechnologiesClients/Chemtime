@@ -1,4 +1,4 @@
-.new-batch-price-container {
+.test-series-price-container {
   font-family: "Poppins";
   margin-bottom: 2vw;
 
@@ -186,9 +186,10 @@
 }
 
 @media screen and (max-width: "480px") {
-  .price-container {
+  .test-series-price-container {
     margin-bottom: 5vw;
     margin-top: 3vw;
+    margin-left: 3vw;
 
     .price-template {
       width: 88vw;
@@ -310,7 +311,6 @@
 
         .btns {
           .read-more-btn {
-
             font-size: 4vw;
           }
         }

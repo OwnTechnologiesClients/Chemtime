@@ -198,7 +198,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Link
+        {/* <Link
           to={`${localStorage.getItem("token") ? "/history" : "/student-login"
             }`}
           onClick={() => handleItemClick("Student Login")}
@@ -209,7 +209,16 @@ const Navbar = () => {
           >
             Student Login
           </div>
+        </Link> */}
+
+        <Link to="/form" onClick={() => handleItemClick("about")}>
+          <div
+            className={`menu-item ${activeItem === "about" ? "active" : ""}`}
+          >
+            Admission Form
+          </div>
         </Link>
+
         <Link
           to="https://blog.chemtime.co.in/"
           onClick={() => handleItemClick("blog")}
@@ -218,7 +227,7 @@ const Navbar = () => {
             Blog
           </div>
         </Link>
-        <Link to="/form">
+        <Link to="/new-batch">
           <div className="new-batch">NEW BATCH</div>
         </Link>
       </div>

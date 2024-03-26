@@ -37,24 +37,24 @@ const RegistrationSection = () => {
       dateofbirth.current.value
     ) {
       try {
-        // const response = await axios({
-        //   method: "post",
-        //   url: "https://backend-k.onrender.com/api/student/free-registration",
-        //   data: {
-        //     email: email.current.value,
-        //     coursename: course.current.value,
-        //     phonenumber: number.current.value,
-        //     dateofbirth: dateofbirth.current.value,
-        //   },
-        //   headers: {},
-        // });
-        // console.log(response);
+        const response = await axios({
+          method: "post",
+          url: "http://localhost:9000/api/student/free-registration",
+          data: {
+            email: email.current.value,
+            coursename: course.current.value,
+            phonenumber: number.current.value,
+            name: dateofbirth.current.value,
+          },
+          headers: {},
+        });
+        console.log(response);
 
         const tempparamas = {
-          email:email.current.value ,
-          course: course.current.value ,
-          phone: number.current.value ,
-          dob: dateofbirth.current.value
+          name: dateofbirth.current.value,
+          email: email.current.value,
+          course: course.current.value,
+          phone: number.current.value,
         }
         emailjs
           .send(
@@ -102,13 +102,25 @@ const RegistrationSection = () => {
       <h1>
         Get A Free <span>Registration</span>!{" "}
       </h1>
+
+
       <form onSubmit={handleSubmit} ref={form}>
+
+        <input
+          ref={dateofbirth}
+          name="dob"
+          id="dob"
+          placeholder="Name"
+          type={inputType}
+
+        />
+
         <input
           ref={email}
-          type="email"
+          type="text"
           name="email"
           id="email"
-          placeholder="Enter Name"
+          placeholder="Enter Email"
         />
         <select ref={course} name="course" id="course">
           <option value="" disabled selected>
@@ -129,15 +141,7 @@ const RegistrationSection = () => {
           id="phone"
           placeholder="Phone Number"
         />
-        <input
-          ref={dateofbirth}
-          name="dob"
-          id="dob"
-          placeholder="Date Of Birth"
-          type={inputType}
-          onFocus={handleFocus}
-          onBlur={handleBlur}
-        />
+
         <button type="submit" id="submit">
           Submit Now
         </button>

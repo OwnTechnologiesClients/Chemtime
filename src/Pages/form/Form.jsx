@@ -54,7 +54,7 @@ function Form() {
   const finalCall = async (xxx) => {
     const result = await axios({
       method: "post",
-      url: "https://chemtime-backend-0duz.onrender.com/api/student/get-registration-form",
+      url: "http://localhost:9000/api/student/get-registration-form",
       data: {
         registrationNo: xxx.registrationNo,
         contact: xxx.contact,
@@ -256,7 +256,7 @@ function Form() {
     try {
       const response = await axios({
         method: "post",
-        url: "https://chemtime-backend-0duz.onrender.com/api/v1/phonepe/payment",
+        url: "http://localhost:9000/api/v1/phonepe/payment",
         data: {
           name: "vipul",
           amount: x,
@@ -322,7 +322,7 @@ function Form() {
     }
     const response = await axios({
       method: "post",
-      url: "https://chemtime-backend-0duz.onrender.com/api/payment/createOrder",
+      url: "http://localhost:9000/api/payment/createOrder",
       data: {
         amount: price * 100,
         currency: "INR",
@@ -350,7 +350,7 @@ function Form() {
         console.log(response);
         const res = await axios({
           method: "post",
-          url: "https://chemtime-backend-0duz.onrender.com/api/payment/verifyOrder",
+          url: "http://localhost:9000/api/payment/verifyOrder",
           data: {
             order_id: response.razorpay_order_id,
             payment_id: response.razorpay_payment_id,
@@ -365,7 +365,7 @@ function Form() {
         if (res.data.success) {
           const result = await axios({
             method: "post",
-            //url: "https://chemtime-backend-0duz.onrender.com/api/student/get-registration-form",
+            //url: "http://localhost:9000/api/student/get-registration-form",
             url: "http://localhost:9000/api/student/get-registration-form",
             data: {
               registrationNo: regNo,
@@ -484,7 +484,7 @@ function Form() {
 
             {/* <button type='button' onClick={upload}> Uploadd </button> */}
 
-            {/* <img src={`https://chemtime-backend-0duz.onrender.com/public/${filename}`} /> */}
+            {/* <img src={`http://localhost:9000/public/${filename}`} /> */}
           </div>
 
 

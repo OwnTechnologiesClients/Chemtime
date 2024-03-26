@@ -18,7 +18,7 @@ function FormPrint() {
         const response = await
             axios({
                 method: 'get',
-                url: 'https://chemtime-backend-0duz.onrender.com/api/student/get-current-user',
+                url: 'http://localhost:9000/api/student/get-current-user',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -56,7 +56,7 @@ function FormPrint() {
                         />
                     </div>
                     <div className='form-profilepic'>
-                        <img src={`https://chemtime-backend-0duz.onrender.com/public/${imagefilename}`} />
+                        <img src={`http://localhost:9000/public/${imagefilename}`} />
                     </div>
 
                 </div>

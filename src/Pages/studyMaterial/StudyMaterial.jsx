@@ -175,7 +175,7 @@ const StudyMaterial = () => {
                     <CourseDetail imgSrc={courseDetailImg} heading1={activeLink} detailData={studyMaterialData} />
 
                     <div className="course-idea">
-                        <h2 className='under-bar'>CourseIdea</h2>
+                        <h2 className='under-bar'>Course Idea</h2>
                         <CourseTable mode={"DASHBOARD"} tableFields={tableFields[activeLink]} />
                     </div>
 

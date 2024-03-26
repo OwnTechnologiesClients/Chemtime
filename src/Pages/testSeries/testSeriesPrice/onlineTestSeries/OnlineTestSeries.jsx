@@ -12,7 +12,7 @@ const OnlineTestSeries = () => {
   };
 
   return (
-    <main className="new-batch-price-container">
+    <main className="test-series-price-container">
       <div className="price-template">
         <section className="head-section">
           <h3 className="text-head">Online Test Series for CSIR NET June-2024</h3>

@@ -32,6 +32,15 @@
                 border-radius: 1.5vw;
                 cursor: pointer;
             }
+            .badge:hover {
+                background-color: #2d8eff;
+              }
+        }
+
+        h1 {
+            font-size: 1.5vw;
+            margin: 1vw 0;
+            color: #000;
         }
 
         h2 {
@@ -59,7 +68,47 @@
             padding: .5vw 0;
         }
 
-        @media screen and (max-width:600px) {
+        ul,
+        ol {
+            padding: 1.5vw;
+
+            li {
+                color: #605e5e;
+                padding: 0.5vw 0;
+                font-size: 1.1vw;
+                line-height: 1.4vw;
+
+                h6 {
+                    color: #000;
+                    display: inline-block;
+                    font-size: 1.3vw;
+                    font-weight: normal;
+                }
+            }
+
+            h5 {
+                font-weight: normal;
+                display: inline-block;
+                font-size: 1.1vw;
+                color: #2d8eff !important;
+            }
+        }
+
+        .phone-number {
+            h3 {
+                font-weight: normal;
+                display: inline-block;
+                font-size: 1.1vw;
+                color: #2d8eff !important;
+            }
+        }
+
+
+        .pricing-row {
+            display: flex;
+        }
+
+        @media screen and (max-width:480px) {
             font-size: 3.5vw;
             width: 95vw;
 
@@ -68,7 +117,7 @@
                 flex-direction: column;
                 width: 80%;
                 margin: 1rem auto;
-                
+
                 .badge {
                     text-align: center;
                     margin: 2vw 0;
@@ -87,9 +136,26 @@
                 font-size: 4vw;
             }
 
+            h1 {
+                font-weight: normal;
+                font-size: 5vw;
+            }
+
             h2 {
                 font-weight: normal;
                 font-size: 5vw;
+            }
+
+            ul,
+            ol {
+              li {
+                font-size: 1rem;
+                line-height: 1.2rem;
+        
+                h6 {
+                  font-size: 1rem;
+                }
+              }
             }
 
         }
@@ -99,5 +165,7 @@
         .container-123 {
             padding: 2vw;
         }
+
+
     }
 }

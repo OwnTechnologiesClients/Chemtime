@@ -23,7 +23,7 @@ const Admin = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'https://chemtime-backend-0duz.onrender.com/api/admin/get-details',
+                    url: 'http://localhost:9000/api/admin/get-details',
                     data: {
                         email: userId,
                         password: password

@@ -180,34 +180,28 @@ const WelcomeSection = () => {
                     <br></br>
 
                 </div>
-
-
-
-
-
-
             </div>
 
-            <div className="marqueess">
-                <div className='notification-panel'>
 
-                    <h2 >NOTICE</h2>
+            <div className='notification-panel'>
 
-                    <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                        <div className={`marquee ${isPaused ? 'paused' : ''}`}>
-                            {
-                                newsAndUpdates.map((item, index) => {
-                                    return <div className='notification' key={index}>
-                                        <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
-                                    </div>
-                                })
-                            }
-                        </div>
+                <h2 >NOTICE</h2>
 
+                <div className="marquee-container" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                    <div className={`marquee ${isPaused ? 'paused' : ''}`}>
+                        {
+                            newsAndUpdates.map((item, index) => {
+                                return <div className='notification' key={index}>
+                                    <Link to={item.url}> <div>⚫</div> <div className='content'>{item.content}</div></Link>
+                                </div>
+                            })
+                        }
                     </div>
-                </div>
 
+                </div>
             </div>
+
+
 
         </div>
     )

@@ -7,13 +7,15 @@ const CourseDetail = ({ imgSrc, heading1, detailData }) => {
         <div className='course-detail'>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>ASAP Institute: Study Material</title>
-                <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
+                <title>CSIR NET Chemical Science Study Materials: Check Subject Wise, Download PDF</title>
+                <meta name="description" content="Get CSIR NET Chemical Science study material PDFs for free. Download comprehensive notes, practice papers, and more to ace your exam preparation." />
                 <link rel="canonical" href={"https://chemtime.co.in/studymaterial/" + detailData[heading1]?.url} />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
                 <meta name="robots" content="index,follow" />
                 <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
 
+                <meta property="og:title" content="CSIR NET Chemical Science Study Materials: Check Subject Wise, Download PDF" />
+                <meta property="og:description" content="Get CSIR NET Chemical Science study material PDFs for free. Download comprehensive notes, practice papers, and more to ace your exam preparation." />
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://chemtime.co.in/" />
                 <meta name="locale" content="en_US" />

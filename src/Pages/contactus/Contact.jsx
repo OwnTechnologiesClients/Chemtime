@@ -15,89 +15,70 @@ import axios from 'axios'
 import { Helmet } from "react-helmet";
 
 
+
 const Contact = () => {
-    // const form = useRef();
+    const form = useRef();
     const formRef = useRef();
 
+    const name = useRef();
+    const course = useRef();
+    const email = useRef();
+    const number = useRef();
+    const message = useRef();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        //setIsLoading(true);
 
-        //creating form entries object
-        const formData = new FormData(formRef.current);
-        const formObject = {};
+        if (
+            name.current.value &&
+            course.current.value &&
+            email.current.value &&
+            number.current.value &&
+            message.current.value
+        ) {
+            try {
+                const response = await axios({
+                    method: "post",
+                    url: "http://localhost:9000/api/student/discussing",
+                    data: {
+                        name: name.current.value,
+                        course: course.current.value,
+                        email: email.current.value,
+                        contactnumber: number.current.value,
+                        message: message.current.value,
+                    },
+                    headers: {},
+                });
+                console.log("-------<><><><>  ", response);
 
-        formData.forEach((value, key) => {
-            // Use 'set' to handle multiple values for the same key (e.g., checkboxes)
-            formObject[key] = formObject[key] ? [...formObject[key], value] : value;
-        });
 
-        // console.log('Form Data:', formObject);
 
-        //sending data to backend
-        // const response = await
-        // axios({
-        //     method: 'post',
-        //     url: 'https://localhost:5000/api/student/discussing',
-        //     data: formObject,
-        //     headers: {
-        //         authorization: `Bearer ${localStorage.getItem("token")}`
-        //     }
-        // });
-
-        //sending email
-        emailjs.sendForm('service_89es95f', 'template_9s6e5ki', formRef.current, 'VPawiZbhu5LiJfU63')
-            .then((result) => {
-                console.log(result)
-                toast.success('We will contact you soon', {
-                    position: 'bottom-right',
-                    autoClose: 2000,
+                toast.success("Registration successfully!", {
+                    position: "bottom-right",
+                    autoClose: 2000, // 3 seconds
                     hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
                     progress: undefined,
                 });
-            }, (error) => {
-                console.log(error)
-                toast.warn(response.data.message, {
-                    position: 'bottom-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: false,
-                    pauseOnHover: false,
-                    draggable: false,
-                    progress: undefined,
-                });
-            });
+            } catch (error) {
+                console.log(error);
+                toast.warning("some error occured");
+                //setIsLoading(false);
 
-        // toast on successful sending
-        // if(response.data.success){
+                console.error("Error sending data:", error);
+                // Handle error, maybe show an error message to the user
+            }
+        } else {
+            toast.warning("Enter All fields");
+            //setIsLoading(false);
+            return;
+        }
+    };
 
-        //     toast.success('We will contact you soon', {
-        //         position: 'bottom-right',
-        //         autoClose: 2000,
-        //         hideProgressBar: false,
-        //         closeOnClick: false,
-        //         pauseOnHover: false,
-        //         draggable: false,
-        //         progress: undefined,
-        //     });
-        // }
-        // else{
-        //     toast.warn(response.data.message, {
-        //         position: 'bottom-right',
-        //         autoClose: 2000,
-        //         hideProgressBar: false,
-        //         closeOnClick: false,
-        //         pauseOnHover: false,
-        //         draggable: false,
-        //         progress: undefined,
-        //     });
-        // }
-        formRef.current.reset();
 
-    }
     return (
         <div className='study-material-page'>
 
@@ -109,7 +90,7 @@ const Contact = () => {
                 <meta charSet="utf-8" />
                 <title>ASAP Institute: New Batch</title>
                 <meta name="description" content="Expert faculty, flexible schedules, and comprehensive syllabus coverage. Enroll in our CSIR NET Chemical Sciences online Coaching for success in chemical sciences" />
-                <link rel="canonical" href="https://chemtime.co.in/new-batch" />
+                <link rel="canonical" href="https://chemtime.co.in/contact" />
                 <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
                 <meta name="robots" content="index,follow" />
@@ -135,11 +116,23 @@ const Contact = () => {
                     <h2 className='under-bar'>Interested in discussing?</h2>
                     <p>Have questions or need assistance? Contact us today. We're here to help and eager to hear from you. Your feedback and inquiries are valuable to us. We look forward to connecting with you!</p>
 
-                    <form className="form-fields" ref={formRef} onSubmit={handleSubmit} >
-                        <input name='name' placeholder='Enter Name' required />
-                        <input type="email" name="email" id="email" placeholder='Enter Email' required />
-                        <input type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' required />
-                        <textarea name="message" rows="10" placeholder='Enter Message' required></textarea>
+                    <form className="form-fields" onSubmit={handleSubmit} >
+                        <input ref={name} name='name' placeholder='Enter Name' required />
+                        <select ref={course} name="course" id="course">
+                            <option value="" disabled selected>
+                                Select Course
+                            </option>
+                            <option value="CSIR-NET Chemical Sciences">
+                                CSIR-NET Chemical Sciences
+                            </option>
+                            <option value="GATE Chemistry">GATE Chemistry</option>
+                            <option value="IIT-JAM Chemistry">IIT-JAM Chemistry</option>
+                            <option value="CUET (PG) Chemistry">CUET (PG) Chemistry</option>
+                            <option value="Scholarship Program">Scholarship Program</option>
+                        </select>
+                        <input ref={email} type="email" name="email" id="email" placeholder='Enter Email' required />
+                        <input ref={number} type="number" name="contactnumber" id="contactnumber" placeholder='Enter Contact Number' required />
+                        <textarea ref={message} name="message" rows="10" placeholder='Enter Message' required></textarea>
                         <button type="submit">Send Message</button>
                     </form>
                     <ToastContainer closeButton={false} />

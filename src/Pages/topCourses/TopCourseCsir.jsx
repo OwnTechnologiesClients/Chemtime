@@ -45,13 +45,15 @@ const TopCourseCsir = () => {
 
       <Helmet>
         <meta charSet="utf-8" />
-        <title>CSIR NET JRF Coaching for Chemical Sciences: ASAP Institute</title>
-        <meta name="description" content="CSIR NET JRF Chemistry exam confidently with ASAP Institute top-rated coaching in Delhi. Join a community of successful aspirants benefiting from expert guidance and comprehensive study resources. Your journey to research excellence starts here." />
+        <title>Best Online and Offline Coaching for CSIR-NET/JRF in India - ASAP Institute</title>
+        <meta name="description" content="ASAP Institute offers CSIR-NET/JRF Coaching at very affordable prices. Check study materials, video lectures, mock tests from Best CSIR-NET/JRF Coaching in India." />
         <link rel="canonical" href="https://chemtime.co.in/csir-net-jrf" />
         <meta name="keywords" content="CSIR NET Coaching in Delhi, JRF Coaching Institutes, CSIR NET Coaching Centers in India, CSIR NET Mock Tests, CSIR NET Exam Guidance, CSIR NET Coaching Batch Timings, Best Online Coaching For Iit Jam Chemistry, Csir Net Chemical Science Coaching" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
         <meta name="robots" content="index,follow" />
 
+        <meta property="og:title" content="Best Online and Offline Coaching for CSIR-NET/JRF in India - ASAP Institute" />
+        <meta property="og:description" content="ASAP Institute offers CSIR-NET/JRF Coaching at very affordable prices. Check study materials, video lectures, mock tests from Best CSIR-NET/JRF Coaching in India." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://chemtime.co.in/" />
         <meta name="locale" content="en_US" />
@@ -60,6 +62,62 @@ const TopCourseCsir = () => {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="2694" />
         <meta property="og:image:height" content="1402" />
+
+
+
+        {/* Breadcrumb json */}
+        <script type="application/ld+json">{`
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                  {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://chemtime.co.in/"
+                  },
+                  {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "CSIR-NET/JRF Coaching",
+                      "item": "https://chemtime.co.in/csir-net-jrf"
+                  }
+              ]
+   
+  }
+                    `}</script>
+
+
+        {/* FAQ json */}
+        <script type="application/ld+json">{`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [{
+                "@type": "Question",
+                "name": "Is ASAP Institute good for CSIR NET/JRF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ASAP Institute CSIR NET/JRF Coaching provides the best coaching experience for aspirants preparing for the CSIR NET/JRF exam."
+                }
+              },{
+                "@type": "Question",
+                "name": "What is the success rate of JRF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The success rate is even lower for those who want to be eligible for both JRF and Assistant Professor, which is 0.5%."
+                }
+              },{
+                "@type": "Question",
+                "name": "Which is the best online coaching for CSIR NET/JRF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ASAP Institute offers the best CSIR NET/JRF course at affordable prices."
+                }
+              }]
+            }
+                `}</script>
       </Helmet>
 
       <Header1 />
@@ -84,7 +142,7 @@ const TopCourseCsir = () => {
           </div>
 
           <header>
-            <h2>CSIR-NET/JRF Coaching at ASAP Institute (formerly CHEMTIME)</h2>
+            <h1>CSIR-NET/JRF Coaching at ASAP Institute (formerly CHEMTIME)</h1>
           </header>
 
           <section id="introduction">
@@ -178,6 +236,24 @@ const TopCourseCsir = () => {
               you achieve your goals in the field of Chemistry.
             </p>
           </section>
+
+
+          <h2>Frequently Asked Questions (FAQs):</h2>
+          <ol>
+            <li>
+              <h6>1. Is ASAP Institute good for CSIR NET/JRF?</h6>
+              <p>ASAP Institute CSIR NET/JRF Coaching provides the best coaching experience for aspirants preparing for the CSIR NET/JRF exam.</p>
+            </li>
+            <li>
+              <h6>2. What is the success rate of JRF?</h6>
+              <p>The success rate is even lower for those who want to be eligible for both JRF and Assistant Professor, which is 0.5%.</p>
+            </li>
+            <li>
+              <h6>3. Which is the best online coaching for CSIR NET/JRF?</h6>
+              <p>ASAP Institute offers the best CSIR NET/JRF course at affordable prices.</p>
+            </li>
+
+          </ol>
         </div>
       </div>
 

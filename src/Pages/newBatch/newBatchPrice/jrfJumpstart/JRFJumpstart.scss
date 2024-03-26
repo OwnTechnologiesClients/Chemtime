@@ -188,9 +188,10 @@ $blue: #2D8EFF;
 }
 
 @media screen and (max-width: "480px") {
-  .price-container {
+  .new-batch-silver-price-container {
     margin-bottom: 5vw;
     margin-top: 3vw;
+    margin-left: 1.5vw;
 
     .price-template {
       width: 88vw;

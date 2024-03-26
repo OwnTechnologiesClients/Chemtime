@@ -44,13 +44,15 @@ const TopCourseGate = () => {
     <div className="top-courses">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Best GATE Chemistry Coaching in Delhi, India - ASAP Institute</title>
-        <meta name="description" content="Join the best GATE Chemistry coaching in Delhi at ASAP Institute Expert faculty, comprehensive study material, and personalized guidance for success in GATE Chemistry exam." />
+        <title>Best Gate Chemistry Coaching in India | ASAP Institute</title>
+        <meta name="description" content="Looking for the best GATE Chemistry coaching in India? ASAP Institute provide best Gate Chemistry Coaching with experienced faculty and comprehensive study materials." />
         <link rel="canonical" href="https://chemtime.co.in/gate" />
         <meta name="keywords" content="Best GATE Chemistry Coaching in Delhi, GATE Chemistry Coaching, GATE Chemistry Preparation in Delhi, GATE Chemistry Coaching Institutes in Delhi, Online Coaching for GATE Chemistry" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
         <meta name="robots" content="index,follow" />
 
+        <meta property="og:title" content="Best Gate Chemistry Coaching in India | ASAP Institute" />
+        <meta property="og:description" content="Looking for the best GATE Chemistry coaching in India? ASAP Institute provide best Gate Chemistry Coaching with experienced faculty and comprehensive study materials." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://chemtime.co.in/" />
         <meta name="locale" content="en_US" />
@@ -59,6 +61,68 @@ const TopCourseGate = () => {
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="2694" />
         <meta property="og:image:height" content="1402" />
+
+
+        {/* Breadcrumb json */}
+        <script type="application/ld+json">{`
+            {
+              "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://chemtime.co.in/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "GATE Chemistry Coaching",
+            "item": "https://chemtime.co.in/gate"
+        }
+    ]
+   
+  }
+                    `}</script>
+
+
+        {/* FAQ json */}
+        <script type="application/ld+json">{`
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [{
+                "@type": "Question",
+                "name": "Which coaching is best for GATE chemistry?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ASAP stands out as the top online coaching platform in India specifically tailored for aspiring candidates preparing for the GATE Chemical Engineering entrance exam"
+                }
+              },{
+                "@type": "Question",
+                "name": "Is GATE chemistry easy or hard?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "GATE 2021 Chemistry (CY) Paper Review: As per student feedback, the Chemistry paper was rated as moderately easy. On average, students aimed for around 40 to 50 good attempts in the CY paper."
+                }
+              },{
+                "@type": "Question",
+                "name": "Which branch is toughest in GATE?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Electronics & Communication Engineering, Mining, Physics, and Electrical are considered some of the most challenging branches for the Graduate Aptitude Test in Engineering. Each year, numerous students appear for the exam, leading to a consistent increase in difficulty levels over time."
+                }
+              },{
+                "@type": "Question",
+                "name": "Can I crack GATE in 3 months without coaching?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "By putting in sincere effort, getting proper guidance, and working hard, anyone can pass the GATE exam without needing coaching. If you have a grasp of all the subjects in the GATE syllabus, you can prepare and succeed in just six months. So, yes, it's entirely achievable to crack the GATE exam without coaching."
+                }
+              }]
+            }
+                `}</script>
       </Helmet>
 
       <Header1 />
@@ -83,9 +147,9 @@ const TopCourseGate = () => {
           </div>
 
           <header>
-            <h2>
+            <h1>
               GATE Chemistry Coaching at ASAP Institute: Your Path to Success
-            </h2>
+            </h1>
           </header>
 
           <section id="introduction">

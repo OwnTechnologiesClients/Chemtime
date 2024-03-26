@@ -1,7 +1,7 @@
 {
   "CSIR-NET Chemical Sciences": {
-    "url":"csir-net",
-    "image": "/studymaterial/courseDetail.jpg",
+    "url": "csir-net",
+    "image": "",
     "courseLines": [
       "ChemTime offers Csir Net Chemical Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
       "Csir-Net Chemical Science Study Material will also help you with TIFR, GATE, and SET exams.",
@@ -9,10 +9,11 @@
       "There will be approximately 4 to 5 hours of classes daily for 6 days a Week for around Five Months.",
       "The assessment of performance is done on a regular basis through Topic-wise Tests which are followed by discussion."
     ]
+    
   },
   "GATE Chemistry": {
-    "url":"gate",
-    "image": "/studymaterial/courseDetail.jpg",
+    "url": "gate",
+    "image": "",
     "courseLines": [
       "ChemTime offers Csir GATE Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
       "Csir-Net Chemical Science Study Material will also help you with TIFR, GATE, and SET exams.",
@@ -22,8 +23,8 @@
     ]
   },
   "IIT-JAM Chemistry": {
-    "url":"iit-jam",
-    "image": "/studymaterial/courseDetail.jpg",
+    "url": "iit-jam",
+    "image": "",
     "courseLines": [
       "ChemTime offers Csir UPSC Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
       "Csir-Net Chemical Science Study Material will also help you with TIFR, GATE, and SET exams.",
@@ -33,8 +34,8 @@
     ]
   },
   "CUET (PG) Chemistry": {
-    "url":"cuet",
-    "image": "/studymaterial/courseDetail.jpg",
+    "url": "cuet",
+    "image": "",
     "courseLines": [
       "ChemTime offers Csir UPSC Science Study Material. The classroom Study Course is designed for comprehensive preparation. The main feature of the course is that all the subjects are taught from very basic to advanced level. Due emphasis is given to solving conceptual and objective questions in class.",
       "Csir-Net Chemical Science Study Material will also help you with TIFR, GATE, and SET exams.",
