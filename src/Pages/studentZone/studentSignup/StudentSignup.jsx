@@ -48,7 +48,7 @@ const StudentSignup = () => {
         formData.append("address", address);
         console.log(formData)
         const result = await axios.post(
-            "http://localhost:9000/api/student/register",
+            "https://backend.chemtime.co.in/api/student/register",
             formData,
             {
                 headers: { "Content-Type": "multipart/form-data" }

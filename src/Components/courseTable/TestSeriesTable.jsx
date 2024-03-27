@@ -20,7 +20,7 @@ const TestSeriesTable = ({ mode, tableFields }) => {
     setIsLoading(true);
     const response = await axios({
       method: "get",
-      url: "http://localhost:9000/api/student/get-current-user",
+      url: "https://backend.chemtime.co.in/api/student/get-current-user",
       headers: {
         authorization: `Bearer ${localStorage.getItem("token")}`,
       },

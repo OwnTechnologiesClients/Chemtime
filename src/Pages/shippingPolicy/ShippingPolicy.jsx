@@ -18,11 +18,11 @@ const ShippingPolicy = () => {
             <Header2 />
             <Navbar />
 
-            <HeroSection
+            {/* <HeroSection
                 imgSrc={bg5}
                 hd1={"REFUND POLICY"}
                 hd2={"FOR YOUR BETTER FUTURE"}
-            />
+            /> */}
 
             <div className='refund-policy-section'>
 

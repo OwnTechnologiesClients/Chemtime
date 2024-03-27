@@ -40,7 +40,7 @@ const Contact = () => {
             try {
                 const response = await axios({
                     method: "post",
-                    url: "http://localhost:9000/api/student/discussing",
+                    url: "https://backend.chemtime.co.in/api/student/discussing",
                     data: {
                         name: name.current.value,
                         course: course.current.value,
@@ -49,10 +49,9 @@ const Contact = () => {
                         message: message.current.value,
                     },
                     headers: {},
+                    
                 });
                 console.log("-------<><><><>  ", response);
-
-
 
                 toast.success("Registration successfully!", {
                     position: "bottom-right",

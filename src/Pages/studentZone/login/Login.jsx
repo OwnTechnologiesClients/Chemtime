@@ -26,7 +26,7 @@ const Login = () => {
             const response = await
                 axios({
                     method: 'post',
-                    url: 'http://localhost:9000/api/student/login',
+                    url: 'https://backend.chemtime.co.in/api/student/login',
                     data: {
                         email: userId,
                         dateofbirth: password

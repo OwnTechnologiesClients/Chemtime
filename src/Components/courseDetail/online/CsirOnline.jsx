@@ -76,7 +76,7 @@ const CsirOnline = () => {
         <meta charSet="utf-8" />
         <title>Unlock Success with Our Top CSIR NET Chemical Sciences Online Courses - Enroll Now</title>
         <meta name="description" content="Join ASAP Institute for top-notch CSIR NET Chemical Sciences coaching in Delhi, India. Expert faculty, flexible online options, and competitive fees. Your path to chemistry exam success starts here" />
-        <link rel="canonical" href="https://chemtime.co.in/onlinecourses/csir-net" data-react-helmet="true"/>
+        <link rel="canonical" href="https://chemtime.co.in/onlinecourses/csir-net" data-react-helmet="true" />
         <meta name="keywords" content="Online Classes for CSIR NET Chemical Sciences, CSIR NET Chemical Sciences Online Courses, Online Csir Net Coaching, Csir Net Coaching In Delhi, Csir Net Chemical Science Coaching" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
         <meta name="robots" content="index,follow" />
@@ -232,7 +232,7 @@ const CsirOnline = () => {
 
       {/* <CourseTable mode={"Online Dashboard"} tableFields={tableFields} />
       <CourseTable mode={"Recorded Dashboard"} tableFields={recorded} /> */}
-      <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+      <p>Note: 18% GST is included in above fees as per govt. norms.</p> <br></br><br></br>
 
       <h3>Registration Procedure:</h3>
       <ol>

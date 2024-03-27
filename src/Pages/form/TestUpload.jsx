@@ -7,7 +7,7 @@ function TestUpload() {
         const formData = new FormData()
         formData.append('studentProfile', file)
         console.log("====>>> ");
-        axios.post('http://localhost:9000/api/student/upload', formData)
+        axios.post('https://backend.chemtime.co.in/api/student/upload', formData)
             .then((res) => {
                 console.log("---->>>Response:  ");
 
@@ -26,7 +26,7 @@ function TestUpload() {
         try {
             const response = await axios({
                 method: "post",
-                url: "http://localhost:9000/api/student/registration-form",
+                url: "https://backend.chemtime.co.in/api/student/registration-form",
 
                 data: formData,
                 headers: {

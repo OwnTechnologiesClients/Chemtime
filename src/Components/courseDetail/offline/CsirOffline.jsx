@@ -137,7 +137,7 @@ const Csir = () => {
                 <OfflineTabs />
             </div>
 
-            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+            <p>Note: 18% GST is included in above fees as per govt. norms.</p> <br></br><br></br>
 
 
             <h3>Registration Procedure:</h3>

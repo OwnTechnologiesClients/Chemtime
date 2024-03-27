@@ -39,7 +39,7 @@ const RegistrationSection = () => {
       try {
         const response = await axios({
           method: "post",
-          url: "http://localhost:9000/api/student/free-registration",
+          url: "https://backend.chemtime.co.in/api/student/free-registration",
           data: {
             email: email.current.value,
             coursename: course.current.value,

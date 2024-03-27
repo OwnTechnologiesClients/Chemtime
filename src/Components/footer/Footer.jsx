@@ -94,7 +94,7 @@ const Footer = () => {
           <li><Link to='/student-login'>Login</Link></li>
         </div>
         <div className='rights'>
-          <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.com/" target='_blank'>OwnTechnologies</a></p>
+          <p style={{ marginLeft: "-6rem" }}>© 2023 All Rights Reserved. Created with ❤️ by <a href="https://owntechnologies.in/" target='_blank'>OwnTechnologies</a></p>
         </div>
         <div className='smooth-up'>
           <a onClick={()=>window.scrollTo({top: 0, behavior: 'smooth'})}><img src={down} alt="" /></a>

@@ -26,7 +26,7 @@ const CuetOffline = () => {
                 <link rel="canonical" href="https://chemtime.co.in/offlinecourses/cuet" />
                 <meta name="keywords" content="CUET (PG) Chemistry coaching Delhi, Offline coaching for CUET (PG) Chemistry in Delhi, Best coaching institute for CUET (PG) Chemistry, Top CUET (PG) Chemistry coaching centers in Delhi, Classroom coaching for CUET (PG) Chemistry, CUET (PG) Chemistry coaching classes Delhi" />
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-                <meta name="robots" content="index,follow"/>
+                <meta name="robots" content="index,follow" />
 
                 <meta property="og:type" content="article" />
                 <meta property="og:url" content="https://chemtime.co.in/" />
@@ -56,7 +56,7 @@ const CuetOffline = () => {
 
             <CUETOfflineTabs />
 
-            <p>Note: 18% GST is applicable extra on above fees as per govt. norms.</p> <br></br><br></br>
+            <p>Note: 18% GST is included in above fees as per govt. norms.</p> <br></br><br></br>
 
             <h3>Registration Procedure:</h3>
             <p>To enroll in our CUET(PG) CHEMISTRY offline course, you can follow these simple steps:</p>
