@@ -21,30 +21,53 @@ function Form() {
   const inputRef = useRef(null)
   const [image, setImage] = useState("")
   const [file, setFile] = useState()
+  const [isFileUpload, setisFileUpload] = useState(false)
+
   var uploadFileName = ""
 
+
+  // Save Button Action
   const upload = () => {
 
+    if (isFileUpload === true) {
 
-    const formData = new FormData()
-    formData.append('studentProfile', file)
+      const formData = new FormData()
+      formData.append('studentProfile', file)
 
-    axios.post('https://backend.chemtime.co.in/api/student/upload', formData)
-      .then(res => { })
-      .catch(er => console.log(er))
+      axios.post('https://backend.chemtime.co.in/api/student/upload', formData)
+        .then(res => { })
+        .catch(er => console.log("-------", er))
 
-    uploadFileName = file.name
-    setisFormSaved(true);
+      uploadFileName = file.name
+      //console.log("====>>>> Enter", uploadFileName);
+      //console.log("====>>>> Enter", isFileUpload);
+      setisFormSaved(true);
+    } else {
+      toast.error("Select Image", {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+      });
+    }
+
 
   }
 
   const handleImageClick = () => {
+    console.log("====<<<>>>< CLICK");
     inputRef.current.click();
+
   }
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
-    console.log(file);
+    console.log("----->>>>>>>> ", file);
+    setisFileUpload(true);
+    console.log("===>>> FILE CHANGED  ", isFileUpload);
     //setImage(event.target.files[0])
     setFile(event.target.files[0])
   }
@@ -204,6 +227,7 @@ function Form() {
     console.log(formData?.gender);
   };
 
+  // Submit Button Action
   const handleSubmit = async (e) => {
 
     e.preventDefault();
@@ -450,7 +474,7 @@ function Form() {
         </div>
         <div className="sf-contact-details">
           <p>
-            Reg, Orice: 28-B/71- Jia Sara (Hauz Khas) Near IT Delhi - 110016
+            reg. Office: 28 B/7/1, Jia Sarai, Hauz Khas, New Delhi, Delhi 110016
           </p>
           <p>Tel.: +91-8595764714</p>
           <p>E-mail: info@asapchemtime.com</p>
@@ -1150,7 +1174,11 @@ function Form() {
           >
             Print As PDF
           </button>
-          <button type='button' onClick={upload}> Save </button>
+          <button type='button' onClick={
+
+            upload
+
+          }> Save </button>
           <button className={`button ${!isFormSaved ? "disabled-btn" : ""}`} onClick={handleSubmit}>
             Submit
           </button>
