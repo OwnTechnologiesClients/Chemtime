@@ -217,7 +217,7 @@ function Form() {
 
 
   const handleChange = (event) => {
-    event.preventDefault();
+    //event.preventDefault();
     const { name, value } = event.target;
 
     setFormData((prevData) => ({
@@ -529,7 +529,6 @@ function Form() {
             <span>Course Duration: </span>
           </label>
           <label>
-            <span>6 Month</span>
             <input
               name="courseduration"
               type="radio"
@@ -538,23 +537,23 @@ function Form() {
               onChange={handleChange}
 
             />
+            <span>6 Month</span>
+
           </label>
 
           <label>
-            <span>1 Year</span>
             <input
               name="courseduration"
               type="radio"
               value="1 Year"
               checked={formData?.courseduration === "1 Year"}
               onChange={handleChange}
-
-
             />
+            <span>1 Year</span>
+
           </label>
 
           <label>
-            <span>2 Years</span>
             <input
               name="courseduration"
               type="radio"
@@ -564,6 +563,8 @@ function Form() {
 
 
             />
+            <span>2 Years</span>
+
           </label>
         </div>
 
@@ -579,13 +580,13 @@ function Form() {
         </div>
       </div>
 
+      {/*---------------------- Mode of study ---------------------- */}
       <div className="sf-course-section">
         <div className="sf-course-radio-button-form">
           <label>
             <span>Mode of Study: </span>
           </label>
           <label>
-            <span>Demo</span>
             <input
               name="coursetype"
               type="radio"
@@ -595,10 +596,11 @@ function Form() {
             // Checking this radio button if the selected option is "Male"
             // checked={selectedOption === "Demo"}
             />
+            <span>Demo</span>
+
           </label>
 
           <label>
-            <span>Regular</span>
             <input
               name="coursetype"
               type="radio"
@@ -607,10 +609,11 @@ function Form() {
               checked={formData?.coursetype === "Regular"}
               onChange={handleChange}
             />
+            <span>Regular</span>
+
           </label>
 
           <label>
-            <span>Weekend</span>
             <input
               name="coursetype"
               type="radio"
@@ -619,10 +622,11 @@ function Form() {
               checked={formData?.coursetype === "Weekend"}
               onChange={handleChange}
             />
+            <span>Weekend</span>
+
           </label>
 
           <label>
-            <span>Correspondance</span>
             <input
               name="coursetype"
               type="radio"
@@ -630,10 +634,11 @@ function Form() {
               checked={formData?.coursetype === "Correspondance"}
               onChange={handleChange}
             />
+            <span>Correspondance</span>
+
           </label>
 
           <label>
-            <span>Test Series</span>
             <input
               name="coursetype"
               type="radio"
@@ -641,6 +646,8 @@ function Form() {
               checked={formData?.coursetype === "Test Series"}
               onChange={handleChange}
             />
+            <span>Test Series</span>
+
           </label>
         </div>
       </div>
@@ -708,7 +715,6 @@ function Form() {
           <span>Gender: </span>
         </label>
         <label>
-          <span>Male</span>
           <input
             name="gender"
             type="radio"
@@ -717,10 +723,11 @@ function Form() {
             // checked={selectedOption === "Male"}
             onChange={handleChange}
           />
+          <span>Male</span>
+
         </label>
 
         <label>
-          <span>Female</span>
           <input
             name="gender"
             type="radio"
@@ -729,6 +736,8 @@ function Form() {
             // checked={selectedOption === "Female"}
             onChange={handleChange}
           />
+          <span>Female</span>
+
         </label>
       </div>
 
@@ -1077,7 +1086,6 @@ function Form() {
             <span>Mode Of Payment: </span>
           </label>
           <label>
-            <span>Online</span>
             <input
               name="modeofpayment"
               type="radio"
@@ -1086,10 +1094,11 @@ function Form() {
               // checked={selectedOption === "Male"}
               onChange={handleChange}
             />
+            <span>Online</span>
+
           </label>
 
           <label>
-            <span>Offline</span>
             <input
               name="modeofpayment"
               type="radio"
@@ -1098,6 +1107,8 @@ function Form() {
               // checked={selectedOption === "Female"}
               onChange={handleChange}
             />
+            <span>Offline</span>
+
           </label>
         </div>
       </div>
